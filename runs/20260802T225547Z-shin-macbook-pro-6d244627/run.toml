@@ -1,0 +1,12 @@
+run_id = "20260802T225547Z-shin-macbook-pro-6d244627"
+timestamp_utc = "20260802T225547Z"
+hostname = "shin-macbook-pro.local"
+uname = "Darwin shin-macbook-pro.local 25.5.0 Darwin Kernel Version 25.5.0: Tue Jun  9 22:28:24 PDT 2026; root:xnu-12377.121.10~1/RELEASE_ARM64_T6020 arm64"
+julia = "julia version 1.12.6"
+code_commit = "116decb4b63c7598151cbd15e8237c9bb3316d4e"
+files = [
+    "Manifest.toml",
+    "results/logs/shin-macbook-pro_Metal_20260802T224632Z.log",
+    "results/shin-macbook-pro.local_Metal-Apple_M2_Pro_fp32_OPF_hw.toml",
+    "results/shin-macbook-pro.local_Metal-Apple_M2_Pro_fp32_OPF.csv",
+]
