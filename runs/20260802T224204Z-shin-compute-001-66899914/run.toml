@@ -1,0 +1,13 @@
+run_id = "20260802T224204Z-shin-compute-001-66899914"
+timestamp_utc = "20260802T224204Z"
+hostname = "shin-compute-001"
+uname = "Linux shin-compute-001 6.8.0-136-generic #136-Ubuntu SMP PREEMPT_DYNAMIC Wed Jul  1 21:53:05 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux"
+julia = "julia not found"
+code_commit = "ae7a406a39e5cdb4205e371d785617ad11b0e41d"
+files = [
+    "Manifest.toml",
+    "results/logs/shin-compute-001_CUDA_20260802T215527Z.log",
+    "results/logs/shin-compute-001_CUDA_20260802T221049Z.log",
+    "results/shin-compute-001_CUDA-Quadro_GV100_fp64_OPF.csv",
+    "results/shin-compute-001_CUDA-Quadro_GV100_fp64_OPF_hw.toml",
+]
