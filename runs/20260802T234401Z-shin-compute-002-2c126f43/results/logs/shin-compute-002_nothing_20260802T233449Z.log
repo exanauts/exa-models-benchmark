@@ -1,0 +1,42 @@
+┌ Info: Running ExaModels benchmarks
+│   device = "CPU"
+│   T = Float64
+│   seconds = 0.2
+└   suites = 1-element Vector{String}: …
+[ Info: COPS ExaModels: bearing/(50, 50)
+[ Info: COPS ExaModels: bearing/(100, 100)
+[ Info: COPS ExaModels: camshape/3200
+[ Info: COPS ExaModels: camshape/6400
+[ Info: COPS ExaModels: catmix/1600
+[ Info: COPS ExaModels: catmix/3200
+[ Info: COPS ExaModels: chain/3200
+[ Info: COPS ExaModels: chain/6400
+[ Info: COPS ExaModels: channel/3200
+[ Info: COPS ExaModels: channel/6400
+[ Info: COPS ExaModels: elec/200
+[ Info: COPS ExaModels: elec/400
+[ Info: COPS ExaModels: gasoil/1600
+[ Info: COPS ExaModels: gasoil/3200
+[ Info: COPS ExaModels: glider/1600
+[ Info: COPS ExaModels: glider/3200
+[ Info: COPS ExaModels: marine/800
+[ Info: COPS ExaModels: marine/1600
+[ Info: COPS ExaModels: methanol/1600
+[ Info: COPS ExaModels: methanol/3200
+[ Info: COPS ExaModels: minsurf/(50, 50)
+[ Info: COPS ExaModels: minsurf/(100, 100)
+[ Info: COPS ExaModels: pinene/1600
+[ Info: COPS ExaModels: pinene/3200
+[ Info: COPS ExaModels: polygon/1600
+[ Info: COPS ExaModels: polygon/3200
+[ Info: COPS ExaModels: robot/800
+[ Info: COPS ExaModels: robot/1600
+[ Info: COPS ExaModels: rocket/6400
+[ Info: COPS ExaModels: rocket/12800
+[ Info: COPS ExaModels: steering/6400
+[ Info: COPS ExaModels: steering/12800
+[ Info: COPS ExaModels: torsion/(50, 50)
+[ Info: COPS ExaModels: torsion/(100, 100)
+[ Info: COPS ExaModels: dirichlet/20
+[ Info: COPS ExaModels: dirichlet/40
+[ Info: Results saved to results/shin-compute-002_CPU_fp64_COPS.csv (36 rows)

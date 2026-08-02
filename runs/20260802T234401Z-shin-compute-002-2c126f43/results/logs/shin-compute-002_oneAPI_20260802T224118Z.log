@@ -1,0 +1,543 @@
+WARNING: Small BAR detected for device 0000:db:00.0
+┌ Info: Running ExaModels benchmarks
+│   device = "oneAPI-Intel(R) Arc(TM) A770 Graphics"
+│   T = Float32
+│   seconds = 0.2
+└   suites = 1-element Vector{String}: …
+[ Info: OPF ExaModels (polar): pglib_opf_case118_ieee.m
+[ Info: Loading matpower file
+┌ Warning: Failed: OPF ExaModels (polar) pglib_opf_case118_ieee.m
+│   exception =
+│    Float64 is not supported on this device
+│    Stacktrace:
+│      [1] error(s::String)
+│        @ Base ./error.jl:44
+│      [2] check_eltype(T::Type)
+│        @ oneAPI ~/.julia/packages/oneAPI/x1T59/src/array.jl:40
+│      [3] oneArray{Float64, 1, oneAPI.oneL0.DeviceBuffer}(::UndefInitializer, dims::Tuple{Int64})
+│        @ oneAPI ~/.julia/packages/oneAPI/x1T59/src/array.jl:92
+│      [4] oneArray
+│        @ ~/.julia/packages/oneAPI/x1T59/src/array.jl:302 [inlined]
+│      [5] oneArray
+│        @ ~/.julia/packages/oneAPI/x1T59/src/array.jl:307 [inlined]
+│      [6] oneArray
+│        @ ~/.julia/packages/oneAPI/x1T59/src/array.jl:316 [inlined]
+│      [7] convert
+│        @ ~/.julia/packages/GPUArrays/V2qKA/src/host/construction.jl:4 [inlined]
+│      [8] adapt_storage
+│        @ ~/.julia/packages/oneAPI/x1T59/src/array.jl:503 [inlined]
+│      [9] adapt_structure
+│        @ ~/.julia/packages/Adapt/eGgVH/src/Adapt.jl:50 [inlined]
+│     [10] adapt
+│        @ ~/.julia/packages/Adapt/eGgVH/src/Adapt.jl:40 [inlined]
+│     [11] adapt_storage
+│        @ ~/.julia/packages/oneAPI/x1T59/src/oneAPIKernels.jl:36 [inlined]
+│     [12] adapt_structure
+│        @ ~/.julia/packages/Adapt/eGgVH/src/Adapt.jl:50 [inlined]
+│     [13] adapt
+│        @ ~/.julia/packages/Adapt/eGgVH/src/Adapt.jl:40 [inlined]
+│     [14] convert_array
+│        @ ~/.julia/packages/ExaModels/b44x9/src/templates.jl:3 [inlined]
+│     [15] #convert_data##0
+│        @ ./none:-1 [inlined]
+│     [16] iterate
+│        @ ./generator.jl:48 [inlined]
+│     [17] collect
+│        @ ./array.jl:790 [inlined]
+│     [18] _totuple
+│        @ ./tuple.jl:488 [inlined]
+│     [19] Tuple
+│        @ ./tuple.jl:454 [inlined]
+│     [20] (NamedTuple{(:baseMVA, :bus, :gen, :arc, :branch, :storage, :ref_buses, :vmax, :vmin, :pmax, :pmin, :qmax, :qmin, :angmax, :angmin, :rate_a, :vm0, :va0, :pg0, :qg0, :pdmax, :pcmax, :srating, :emax)})(itr::Base.Generator{@NamedTuple{baseMVA::Vector{Float64}, bus::Vector{ExaPowerIO.BusData{Float64}}, gen::Vector{ExaPowerIO.GenData{Float64}}, arc::Vector{ExaPowerIO.ArcData{Float64}}, branch::Vector{ExaPowerIO.BranchData{Float64}}, storage::Vector{@NamedTuple{i::Int64}}, ref_buses::Vector{Int64}, vmax::Vector{Float64}, vmin::Vector{Float64}, pmax::Vector{Float64}, pmin::Vector{Float64}, qmax::Vector{Float64}, qmin::Vector{Float64}, angmax::Vector{Float64}, angmin::Vector{Float64}, rate_a::Vector{Float64}, vm0::Vector{Float64}, va0::Vector{Float64}, pg0::Vector{Float64}, qg0::Vector{Float64}, pdmax::Vector{@NamedTuple{i::Int64}}, pcmax::Vector{@NamedTuple{i::Int64}}, srating::Vector{@NamedTuple{i::Int64}}, emax::Vector{@NamedTuple{i::Int64}}}, ExaModelsPower.var"#convert_data##0#convert_data##1"{oneAPIBackend}})
+│        @ Base ./namedtuple.jl:149
+│     [21] convert_data(data::@NamedTuple{baseMVA::Vector{Float64}, bus::Vector{ExaPowerIO.BusData{Float64}}, gen::Vector{ExaPowerIO.GenData{Float64}}, arc::Vector{ExaPowerIO.ArcData{Float64}}, branch::Vector{ExaPowerIO.BranchData{Float64}}, storage::Vector{@NamedTuple{i::Int64}}, ref_buses::Vector{Int64}, vmax::Vector{Float64}, vmin::Vector{Float64}, pmax::Vector{Float64}, pmin::Vector{Float64}, qmax::Vector{Float64}, qmin::Vector{Float64}, angmax::Vector{Float64}, angmin::Vector{Float64}, rate_a::Vector{Float64}, vm0::Vector{Float64}, va0::Vector{Float64}, pg0::Vector{Float64}, qg0::Vector{Float64}, pdmax::Vector{@NamedTuple{i::Int64}}, pcmax::Vector{@NamedTuple{i::Int64}}, srating::Vector{@NamedTuple{i::Int64}}, emax::Vector{@NamedTuple{i::Int64}}}, backend::oneAPIBackend)
+│        @ ExaModelsPower ~/.julia/packages/ExaModelsPower/UStrU/src/parser.jl:1
+│     [22] ac_opf_model(filename::String; backend::oneAPIBackend, T::Type, form::Symbol, user_callback::Function, kwargs::@Kwargs{})
+│        @ ExaModelsPower ~/.julia/packages/ExaModelsPower/UStrU/src/opf.jl:226
+│     [23] build_examodels_opf(filename::String; backend::oneAPIBackend, form::Symbol, T::Type)
+│        @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:118
+│     [24] build_examodels_opf
+│        @ /tmp/exa-wf-test/benchmark/benchmark.jl:117 [inlined]
+│     [25] run_examodels(; backend::oneAPIBackend, seconds::Float64, suites::Vector{String}, T::Type)
+│        @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:367
+│     [26] main()
+│        @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:552
+│     [27] top-level scope
+│        @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [28] include(mod::Module, _path::String)
+│        @ Base ./Base.jl:306
+│     [29] exec_options(opts::Base.JLOptions)
+│        @ Base ./client.jl:317
+│     [30] _start()
+│        @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:372
+[ Info: OPF ExaModels (polar): pglib_opf_case1354_pegase.m
+[ Info: Loading matpower file
+┌ Warning: Failed: OPF ExaModels (polar) pglib_opf_case1354_pegase.m
+│   exception =
+│    Float64 is not supported on this device
+│    Stacktrace:
+│      [1] error(s::String)
+│        @ Base ./error.jl:44
+│      [2] check_eltype(T::Type)
+│        @ oneAPI ~/.julia/packages/oneAPI/x1T59/src/array.jl:40
+│      [3] oneArray{Float64, 1, oneAPI.oneL0.DeviceBuffer}(::UndefInitializer, dims::Tuple{Int64})
+│        @ oneAPI ~/.julia/packages/oneAPI/x1T59/src/array.jl:92
+│      [4] oneArray
+│        @ ~/.julia/packages/oneAPI/x1T59/src/array.jl:302 [inlined]
+│      [5] oneArray
+│        @ ~/.julia/packages/oneAPI/x1T59/src/array.jl:307 [inlined]
+│      [6] oneArray
+│        @ ~/.julia/packages/oneAPI/x1T59/src/array.jl:316 [inlined]
+│      [7] convert
+│        @ ~/.julia/packages/GPUArrays/V2qKA/src/host/construction.jl:4 [inlined]
+│      [8] adapt_storage
+│        @ ~/.julia/packages/oneAPI/x1T59/src/array.jl:503 [inlined]
+│      [9] adapt_structure
+│        @ ~/.julia/packages/Adapt/eGgVH/src/Adapt.jl:50 [inlined]
+│     [10] adapt
+│        @ ~/.julia/packages/Adapt/eGgVH/src/Adapt.jl:40 [inlined]
+│     [11] adapt_storage
+│        @ ~/.julia/packages/oneAPI/x1T59/src/oneAPIKernels.jl:36 [inlined]
+│     [12] adapt_structure
+│        @ ~/.julia/packages/Adapt/eGgVH/src/Adapt.jl:50 [inlined]
+│     [13] adapt
+│        @ ~/.julia/packages/Adapt/eGgVH/src/Adapt.jl:40 [inlined]
+│     [14] convert_array
+│        @ ~/.julia/packages/ExaModels/b44x9/src/templates.jl:3 [inlined]
+│     [15] #convert_data##0
+│        @ ./none:-1 [inlined]
+│     [16] iterate
+│        @ ./generator.jl:48 [inlined]
+│     [17] collect
+│        @ ./array.jl:790 [inlined]
+│     [18] _totuple
+│        @ ./tuple.jl:488 [inlined]
+│     [19] Tuple
+│        @ ./tuple.jl:454 [inlined]
+│     [20] (NamedTuple{(:baseMVA, :bus, :gen, :arc, :branch, :storage, :ref_buses, :vmax, :vmin, :pmax, :pmin, :qmax, :qmin, :angmax, :angmin, :rate_a, :vm0, :va0, :pg0, :qg0, :pdmax, :pcmax, :srating, :emax)})(itr::Base.Generator{@NamedTuple{baseMVA::Vector{Float64}, bus::Vector{ExaPowerIO.BusData{Float64}}, gen::Vector{ExaPowerIO.GenData{Float64}}, arc::Vector{ExaPowerIO.ArcData{Float64}}, branch::Vector{ExaPowerIO.BranchData{Float64}}, storage::Vector{@NamedTuple{i::Int64}}, ref_buses::Vector{Int64}, vmax::Vector{Float64}, vmin::Vector{Float64}, pmax::Vector{Float64}, pmin::Vector{Float64}, qmax::Vector{Float64}, qmin::Vector{Float64}, angmax::Vector{Float64}, angmin::Vector{Float64}, rate_a::Vector{Float64}, vm0::Vector{Float64}, va0::Vector{Float64}, pg0::Vector{Float64}, qg0::Vector{Float64}, pdmax::Vector{@NamedTuple{i::Int64}}, pcmax::Vector{@NamedTuple{i::Int64}}, srating::Vector{@NamedTuple{i::Int64}}, emax::Vector{@NamedTuple{i::Int64}}}, ExaModelsPower.var"#convert_data##0#convert_data##1"{oneAPIBackend}})
+│        @ Base ./namedtuple.jl:149
+│     [21] convert_data(data::@NamedTuple{baseMVA::Vector{Float64}, bus::Vector{ExaPowerIO.BusData{Float64}}, gen::Vector{ExaPowerIO.GenData{Float64}}, arc::Vector{ExaPowerIO.ArcData{Float64}}, branch::Vector{ExaPowerIO.BranchData{Float64}}, storage::Vector{@NamedTuple{i::Int64}}, ref_buses::Vector{Int64}, vmax::Vector{Float64}, vmin::Vector{Float64}, pmax::Vector{Float64}, pmin::Vector{Float64}, qmax::Vector{Float64}, qmin::Vector{Float64}, angmax::Vector{Float64}, angmin::Vector{Float64}, rate_a::Vector{Float64}, vm0::Vector{Float64}, va0::Vector{Float64}, pg0::Vector{Float64}, qg0::Vector{Float64}, pdmax::Vector{@NamedTuple{i::Int64}}, pcmax::Vector{@NamedTuple{i::Int64}}, srating::Vector{@NamedTuple{i::Int64}}, emax::Vector{@NamedTuple{i::Int64}}}, backend::oneAPIBackend)
+│        @ ExaModelsPower ~/.julia/packages/ExaModelsPower/UStrU/src/parser.jl:1
+│     [22] ac_opf_model(filename::String; backend::oneAPIBackend, T::Type, form::Symbol, user_callback::Function, kwargs::@Kwargs{})
+│        @ ExaModelsPower ~/.julia/packages/ExaModelsPower/UStrU/src/opf.jl:226
+│     [23] build_examodels_opf(filename::String; backend::oneAPIBackend, form::Symbol, T::Type)
+│        @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:118
+│     [24] build_examodels_opf
+│        @ /tmp/exa-wf-test/benchmark/benchmark.jl:117 [inlined]
+│     [25] run_examodels(; backend::oneAPIBackend, seconds::Float64, suites::Vector{String}, T::Type)
+│        @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:367
+│     [26] main()
+│        @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:552
+│     [27] top-level scope
+│        @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [28] include(mod::Module, _path::String)
+│        @ Base ./Base.jl:306
+│     [29] exec_options(opts::Base.JLOptions)
+│        @ Base ./client.jl:317
+│     [30] _start()
+│        @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:372
+[ Info: OPF ExaModels (polar): pglib_opf_case2869_pegase.m
+[ Info: Loading matpower file
+┌ Warning: Failed: OPF ExaModels (polar) pglib_opf_case2869_pegase.m
+│   exception =
+│    Float64 is not supported on this device
+│    Stacktrace:
+│      [1] error(s::String)
+│        @ Base ./error.jl:44
+│      [2] check_eltype(T::Type)
+│        @ oneAPI ~/.julia/packages/oneAPI/x1T59/src/array.jl:40
+│      [3] oneArray{Float64, 1, oneAPI.oneL0.DeviceBuffer}(::UndefInitializer, dims::Tuple{Int64})
+│        @ oneAPI ~/.julia/packages/oneAPI/x1T59/src/array.jl:92
+│      [4] oneArray
+│        @ ~/.julia/packages/oneAPI/x1T59/src/array.jl:302 [inlined]
+│      [5] oneArray
+│        @ ~/.julia/packages/oneAPI/x1T59/src/array.jl:307 [inlined]
+│      [6] oneArray
+│        @ ~/.julia/packages/oneAPI/x1T59/src/array.jl:316 [inlined]
+│      [7] convert
+│        @ ~/.julia/packages/GPUArrays/V2qKA/src/host/construction.jl:4 [inlined]
+│      [8] adapt_storage
+│        @ ~/.julia/packages/oneAPI/x1T59/src/array.jl:503 [inlined]
+│      [9] adapt_structure
+│        @ ~/.julia/packages/Adapt/eGgVH/src/Adapt.jl:50 [inlined]
+│     [10] adapt
+│        @ ~/.julia/packages/Adapt/eGgVH/src/Adapt.jl:40 [inlined]
+│     [11] adapt_storage
+│        @ ~/.julia/packages/oneAPI/x1T59/src/oneAPIKernels.jl:36 [inlined]
+│     [12] adapt_structure
+│        @ ~/.julia/packages/Adapt/eGgVH/src/Adapt.jl:50 [inlined]
+│     [13] adapt
+│        @ ~/.julia/packages/Adapt/eGgVH/src/Adapt.jl:40 [inlined]
+│     [14] convert_array
+│        @ ~/.julia/packages/ExaModels/b44x9/src/templates.jl:3 [inlined]
+│     [15] #convert_data##0
+│        @ ./none:-1 [inlined]
+│     [16] iterate
+│        @ ./generator.jl:48 [inlined]
+│     [17] collect
+│        @ ./array.jl:790 [inlined]
+│     [18] _totuple
+│        @ ./tuple.jl:488 [inlined]
+│     [19] Tuple
+│        @ ./tuple.jl:454 [inlined]
+│     [20] (NamedTuple{(:baseMVA, :bus, :gen, :arc, :branch, :storage, :ref_buses, :vmax, :vmin, :pmax, :pmin, :qmax, :qmin, :angmax, :angmin, :rate_a, :vm0, :va0, :pg0, :qg0, :pdmax, :pcmax, :srating, :emax)})(itr::Base.Generator{@NamedTuple{baseMVA::Vector{Float64}, bus::Vector{ExaPowerIO.BusData{Float64}}, gen::Vector{ExaPowerIO.GenData{Float64}}, arc::Vector{ExaPowerIO.ArcData{Float64}}, branch::Vector{ExaPowerIO.BranchData{Float64}}, storage::Vector{@NamedTuple{i::Int64}}, ref_buses::Vector{Int64}, vmax::Vector{Float64}, vmin::Vector{Float64}, pmax::Vector{Float64}, pmin::Vector{Float64}, qmax::Vector{Float64}, qmin::Vector{Float64}, angmax::Vector{Float64}, angmin::Vector{Float64}, rate_a::Vector{Float64}, vm0::Vector{Float64}, va0::Vector{Float64}, pg0::Vector{Float64}, qg0::Vector{Float64}, pdmax::Vector{@NamedTuple{i::Int64}}, pcmax::Vector{@NamedTuple{i::Int64}}, srating::Vector{@NamedTuple{i::Int64}}, emax::Vector{@NamedTuple{i::Int64}}}, ExaModelsPower.var"#convert_data##0#convert_data##1"{oneAPIBackend}})
+│        @ Base ./namedtuple.jl:149
+│     [21] convert_data(data::@NamedTuple{baseMVA::Vector{Float64}, bus::Vector{ExaPowerIO.BusData{Float64}}, gen::Vector{ExaPowerIO.GenData{Float64}}, arc::Vector{ExaPowerIO.ArcData{Float64}}, branch::Vector{ExaPowerIO.BranchData{Float64}}, storage::Vector{@NamedTuple{i::Int64}}, ref_buses::Vector{Int64}, vmax::Vector{Float64}, vmin::Vector{Float64}, pmax::Vector{Float64}, pmin::Vector{Float64}, qmax::Vector{Float64}, qmin::Vector{Float64}, angmax::Vector{Float64}, angmin::Vector{Float64}, rate_a::Vector{Float64}, vm0::Vector{Float64}, va0::Vector{Float64}, pg0::Vector{Float64}, qg0::Vector{Float64}, pdmax::Vector{@NamedTuple{i::Int64}}, pcmax::Vector{@NamedTuple{i::Int64}}, srating::Vector{@NamedTuple{i::Int64}}, emax::Vector{@NamedTuple{i::Int64}}}, backend::oneAPIBackend)
+│        @ ExaModelsPower ~/.julia/packages/ExaModelsPower/UStrU/src/parser.jl:1
+│     [22] ac_opf_model(filename::String; backend::oneAPIBackend, T::Type, form::Symbol, user_callback::Function, kwargs::@Kwargs{})
+│        @ ExaModelsPower ~/.julia/packages/ExaModelsPower/UStrU/src/opf.jl:226
+│     [23] build_examodels_opf(filename::String; backend::oneAPIBackend, form::Symbol, T::Type)
+│        @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:118
+│     [24] build_examodels_opf
+│        @ /tmp/exa-wf-test/benchmark/benchmark.jl:117 [inlined]
+│     [25] run_examodels(; backend::oneAPIBackend, seconds::Float64, suites::Vector{String}, T::Type)
+│        @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:367
+│     [26] main()
+│        @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:552
+│     [27] top-level scope
+│        @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [28] include(mod::Module, _path::String)
+│        @ Base ./Base.jl:306
+│     [29] exec_options(opts::Base.JLOptions)
+│        @ Base ./client.jl:317
+│     [30] _start()
+│        @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:372
+[ Info: OPF ExaModels (polar): pglib_opf_case9241_pegase.m
+[ Info: Loading matpower file
+┌ Warning: Failed: OPF ExaModels (polar) pglib_opf_case9241_pegase.m
+│   exception =
+│    Float64 is not supported on this device
+│    Stacktrace:
+│      [1] error(s::String)
+│        @ Base ./error.jl:44
+│      [2] check_eltype(T::Type)
+│        @ oneAPI ~/.julia/packages/oneAPI/x1T59/src/array.jl:40
+│      [3] oneArray{Float64, 1, oneAPI.oneL0.DeviceBuffer}(::UndefInitializer, dims::Tuple{Int64})
+│        @ oneAPI ~/.julia/packages/oneAPI/x1T59/src/array.jl:92
+│      [4] oneArray
+│        @ ~/.julia/packages/oneAPI/x1T59/src/array.jl:302 [inlined]
+│      [5] oneArray
+│        @ ~/.julia/packages/oneAPI/x1T59/src/array.jl:307 [inlined]
+│      [6] oneArray
+│        @ ~/.julia/packages/oneAPI/x1T59/src/array.jl:316 [inlined]
+│      [7] convert
+│        @ ~/.julia/packages/GPUArrays/V2qKA/src/host/construction.jl:4 [inlined]
+│      [8] adapt_storage
+│        @ ~/.julia/packages/oneAPI/x1T59/src/array.jl:503 [inlined]
+│      [9] adapt_structure
+│        @ ~/.julia/packages/Adapt/eGgVH/src/Adapt.jl:50 [inlined]
+│     [10] adapt
+│        @ ~/.julia/packages/Adapt/eGgVH/src/Adapt.jl:40 [inlined]
+│     [11] adapt_storage
+│        @ ~/.julia/packages/oneAPI/x1T59/src/oneAPIKernels.jl:36 [inlined]
+│     [12] adapt_structure
+│        @ ~/.julia/packages/Adapt/eGgVH/src/Adapt.jl:50 [inlined]
+│     [13] adapt
+│        @ ~/.julia/packages/Adapt/eGgVH/src/Adapt.jl:40 [inlined]
+│     [14] convert_array
+│        @ ~/.julia/packages/ExaModels/b44x9/src/templates.jl:3 [inlined]
+│     [15] #convert_data##0
+│        @ ./none:-1 [inlined]
+│     [16] iterate
+│        @ ./generator.jl:48 [inlined]
+│     [17] collect
+│        @ ./array.jl:790 [inlined]
+│     [18] _totuple
+│        @ ./tuple.jl:488 [inlined]
+│     [19] Tuple
+│        @ ./tuple.jl:454 [inlined]
+│     [20] (NamedTuple{(:baseMVA, :bus, :gen, :arc, :branch, :storage, :ref_buses, :vmax, :vmin, :pmax, :pmin, :qmax, :qmin, :angmax, :angmin, :rate_a, :vm0, :va0, :pg0, :qg0, :pdmax, :pcmax, :srating, :emax)})(itr::Base.Generator{@NamedTuple{baseMVA::Vector{Float64}, bus::Vector{ExaPowerIO.BusData{Float64}}, gen::Vector{ExaPowerIO.GenData{Float64}}, arc::Vector{ExaPowerIO.ArcData{Float64}}, branch::Vector{ExaPowerIO.BranchData{Float64}}, storage::Vector{@NamedTuple{i::Int64}}, ref_buses::Vector{Int64}, vmax::Vector{Float64}, vmin::Vector{Float64}, pmax::Vector{Float64}, pmin::Vector{Float64}, qmax::Vector{Float64}, qmin::Vector{Float64}, angmax::Vector{Float64}, angmin::Vector{Float64}, rate_a::Vector{Float64}, vm0::Vector{Float64}, va0::Vector{Float64}, pg0::Vector{Float64}, qg0::Vector{Float64}, pdmax::Vector{@NamedTuple{i::Int64}}, pcmax::Vector{@NamedTuple{i::Int64}}, srating::Vector{@NamedTuple{i::Int64}}, emax::Vector{@NamedTuple{i::Int64}}}, ExaModelsPower.var"#convert_data##0#convert_data##1"{oneAPIBackend}})
+│        @ Base ./namedtuple.jl:149
+│     [21] convert_data(data::@NamedTuple{baseMVA::Vector{Float64}, bus::Vector{ExaPowerIO.BusData{Float64}}, gen::Vector{ExaPowerIO.GenData{Float64}}, arc::Vector{ExaPowerIO.ArcData{Float64}}, branch::Vector{ExaPowerIO.BranchData{Float64}}, storage::Vector{@NamedTuple{i::Int64}}, ref_buses::Vector{Int64}, vmax::Vector{Float64}, vmin::Vector{Float64}, pmax::Vector{Float64}, pmin::Vector{Float64}, qmax::Vector{Float64}, qmin::Vector{Float64}, angmax::Vector{Float64}, angmin::Vector{Float64}, rate_a::Vector{Float64}, vm0::Vector{Float64}, va0::Vector{Float64}, pg0::Vector{Float64}, qg0::Vector{Float64}, pdmax::Vector{@NamedTuple{i::Int64}}, pcmax::Vector{@NamedTuple{i::Int64}}, srating::Vector{@NamedTuple{i::Int64}}, emax::Vector{@NamedTuple{i::Int64}}}, backend::oneAPIBackend)
+│        @ ExaModelsPower ~/.julia/packages/ExaModelsPower/UStrU/src/parser.jl:1
+│     [22] ac_opf_model(filename::String; backend::oneAPIBackend, T::Type, form::Symbol, user_callback::Function, kwargs::@Kwargs{})
+│        @ ExaModelsPower ~/.julia/packages/ExaModelsPower/UStrU/src/opf.jl:226
+│     [23] build_examodels_opf(filename::String; backend::oneAPIBackend, form::Symbol, T::Type)
+│        @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:118
+│     [24] build_examodels_opf
+│        @ /tmp/exa-wf-test/benchmark/benchmark.jl:117 [inlined]
+│     [25] run_examodels(; backend::oneAPIBackend, seconds::Float64, suites::Vector{String}, T::Type)
+│        @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:367
+│     [26] main()
+│        @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:552
+│     [27] top-level scope
+│        @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [28] include(mod::Module, _path::String)
+│        @ Base ./Base.jl:306
+│     [29] exec_options(opts::Base.JLOptions)
+│        @ Base ./client.jl:317
+│     [30] _start()
+│        @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:372
+[ Info: OPF ExaModels (rect): pglib_opf_case118_ieee.m
+[ Info: Loading matpower file
+┌ Warning: Failed: OPF ExaModels (rect) pglib_opf_case118_ieee.m
+│   exception =
+│    Float64 is not supported on this device
+│    Stacktrace:
+│      [1] error(s::String)
+│        @ Base ./error.jl:44
+│      [2] check_eltype(T::Type)
+│        @ oneAPI ~/.julia/packages/oneAPI/x1T59/src/array.jl:40
+│      [3] oneArray{Float64, 1, oneAPI.oneL0.DeviceBuffer}(::UndefInitializer, dims::Tuple{Int64})
+│        @ oneAPI ~/.julia/packages/oneAPI/x1T59/src/array.jl:92
+│      [4] oneArray
+│        @ ~/.julia/packages/oneAPI/x1T59/src/array.jl:302 [inlined]
+│      [5] oneArray
+│        @ ~/.julia/packages/oneAPI/x1T59/src/array.jl:307 [inlined]
+│      [6] oneArray
+│        @ ~/.julia/packages/oneAPI/x1T59/src/array.jl:316 [inlined]
+│      [7] convert
+│        @ ~/.julia/packages/GPUArrays/V2qKA/src/host/construction.jl:4 [inlined]
+│      [8] adapt_storage
+│        @ ~/.julia/packages/oneAPI/x1T59/src/array.jl:503 [inlined]
+│      [9] adapt_structure
+│        @ ~/.julia/packages/Adapt/eGgVH/src/Adapt.jl:50 [inlined]
+│     [10] adapt
+│        @ ~/.julia/packages/Adapt/eGgVH/src/Adapt.jl:40 [inlined]
+│     [11] adapt_storage
+│        @ ~/.julia/packages/oneAPI/x1T59/src/oneAPIKernels.jl:36 [inlined]
+│     [12] adapt_structure
+│        @ ~/.julia/packages/Adapt/eGgVH/src/Adapt.jl:50 [inlined]
+│     [13] adapt
+│        @ ~/.julia/packages/Adapt/eGgVH/src/Adapt.jl:40 [inlined]
+│     [14] convert_array
+│        @ ~/.julia/packages/ExaModels/b44x9/src/templates.jl:3 [inlined]
+│     [15] #convert_data##0
+│        @ ./none:-1 [inlined]
+│     [16] iterate
+│        @ ./generator.jl:48 [inlined]
+│     [17] collect
+│        @ ./array.jl:790 [inlined]
+│     [18] _totuple
+│        @ ./tuple.jl:488 [inlined]
+│     [19] Tuple
+│        @ ./tuple.jl:454 [inlined]
+│     [20] (NamedTuple{(:baseMVA, :bus, :gen, :arc, :branch, :storage, :ref_buses, :vmax, :vmin, :pmax, :pmin, :qmax, :qmin, :angmax, :angmin, :rate_a, :vm0, :va0, :pg0, :qg0, :pdmax, :pcmax, :srating, :emax)})(itr::Base.Generator{@NamedTuple{baseMVA::Vector{Float64}, bus::Vector{ExaPowerIO.BusData{Float64}}, gen::Vector{ExaPowerIO.GenData{Float64}}, arc::Vector{ExaPowerIO.ArcData{Float64}}, branch::Vector{ExaPowerIO.BranchData{Float64}}, storage::Vector{@NamedTuple{i::Int64}}, ref_buses::Vector{Int64}, vmax::Vector{Float64}, vmin::Vector{Float64}, pmax::Vector{Float64}, pmin::Vector{Float64}, qmax::Vector{Float64}, qmin::Vector{Float64}, angmax::Vector{Float64}, angmin::Vector{Float64}, rate_a::Vector{Float64}, vm0::Vector{Float64}, va0::Vector{Float64}, pg0::Vector{Float64}, qg0::Vector{Float64}, pdmax::Vector{@NamedTuple{i::Int64}}, pcmax::Vector{@NamedTuple{i::Int64}}, srating::Vector{@NamedTuple{i::Int64}}, emax::Vector{@NamedTuple{i::Int64}}}, ExaModelsPower.var"#convert_data##0#convert_data##1"{oneAPIBackend}})
+│        @ Base ./namedtuple.jl:149
+│     [21] convert_data(data::@NamedTuple{baseMVA::Vector{Float64}, bus::Vector{ExaPowerIO.BusData{Float64}}, gen::Vector{ExaPowerIO.GenData{Float64}}, arc::Vector{ExaPowerIO.ArcData{Float64}}, branch::Vector{ExaPowerIO.BranchData{Float64}}, storage::Vector{@NamedTuple{i::Int64}}, ref_buses::Vector{Int64}, vmax::Vector{Float64}, vmin::Vector{Float64}, pmax::Vector{Float64}, pmin::Vector{Float64}, qmax::Vector{Float64}, qmin::Vector{Float64}, angmax::Vector{Float64}, angmin::Vector{Float64}, rate_a::Vector{Float64}, vm0::Vector{Float64}, va0::Vector{Float64}, pg0::Vector{Float64}, qg0::Vector{Float64}, pdmax::Vector{@NamedTuple{i::Int64}}, pcmax::Vector{@NamedTuple{i::Int64}}, srating::Vector{@NamedTuple{i::Int64}}, emax::Vector{@NamedTuple{i::Int64}}}, backend::oneAPIBackend)
+│        @ ExaModelsPower ~/.julia/packages/ExaModelsPower/UStrU/src/parser.jl:1
+│     [22] ac_opf_model(filename::String; backend::oneAPIBackend, T::Type, form::Symbol, user_callback::Function, kwargs::@Kwargs{})
+│        @ ExaModelsPower ~/.julia/packages/ExaModelsPower/UStrU/src/opf.jl:226
+│     [23] build_examodels_opf(filename::String; backend::oneAPIBackend, form::Symbol, T::Type)
+│        @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:118
+│     [24] build_examodels_opf
+│        @ /tmp/exa-wf-test/benchmark/benchmark.jl:117 [inlined]
+│     [25] run_examodels(; backend::oneAPIBackend, seconds::Float64, suites::Vector{String}, T::Type)
+│        @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:367
+│     [26] main()
+│        @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:552
+│     [27] top-level scope
+│        @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [28] include(mod::Module, _path::String)
+│        @ Base ./Base.jl:306
+│     [29] exec_options(opts::Base.JLOptions)
+│        @ Base ./client.jl:317
+│     [30] _start()
+│        @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:372
+[ Info: OPF ExaModels (rect): pglib_opf_case1354_pegase.m
+[ Info: Loading matpower file
+┌ Warning: Failed: OPF ExaModels (rect) pglib_opf_case1354_pegase.m
+│   exception =
+│    Float64 is not supported on this device
+│    Stacktrace:
+│      [1] error(s::String)
+│        @ Base ./error.jl:44
+│      [2] check_eltype(T::Type)
+│        @ oneAPI ~/.julia/packages/oneAPI/x1T59/src/array.jl:40
+│      [3] oneArray{Float64, 1, oneAPI.oneL0.DeviceBuffer}(::UndefInitializer, dims::Tuple{Int64})
+│        @ oneAPI ~/.julia/packages/oneAPI/x1T59/src/array.jl:92
+│      [4] oneArray
+│        @ ~/.julia/packages/oneAPI/x1T59/src/array.jl:302 [inlined]
+│      [5] oneArray
+│        @ ~/.julia/packages/oneAPI/x1T59/src/array.jl:307 [inlined]
+│      [6] oneArray
+│        @ ~/.julia/packages/oneAPI/x1T59/src/array.jl:316 [inlined]
+│      [7] convert
+│        @ ~/.julia/packages/GPUArrays/V2qKA/src/host/construction.jl:4 [inlined]
+│      [8] adapt_storage
+│        @ ~/.julia/packages/oneAPI/x1T59/src/array.jl:503 [inlined]
+│      [9] adapt_structure
+│        @ ~/.julia/packages/Adapt/eGgVH/src/Adapt.jl:50 [inlined]
+│     [10] adapt
+│        @ ~/.julia/packages/Adapt/eGgVH/src/Adapt.jl:40 [inlined]
+│     [11] adapt_storage
+│        @ ~/.julia/packages/oneAPI/x1T59/src/oneAPIKernels.jl:36 [inlined]
+│     [12] adapt_structure
+│        @ ~/.julia/packages/Adapt/eGgVH/src/Adapt.jl:50 [inlined]
+│     [13] adapt
+│        @ ~/.julia/packages/Adapt/eGgVH/src/Adapt.jl:40 [inlined]
+│     [14] convert_array
+│        @ ~/.julia/packages/ExaModels/b44x9/src/templates.jl:3 [inlined]
+│     [15] #convert_data##0
+│        @ ./none:-1 [inlined]
+│     [16] iterate
+│        @ ./generator.jl:48 [inlined]
+│     [17] collect
+│        @ ./array.jl:790 [inlined]
+│     [18] _totuple
+│        @ ./tuple.jl:488 [inlined]
+│     [19] Tuple
+│        @ ./tuple.jl:454 [inlined]
+│     [20] (NamedTuple{(:baseMVA, :bus, :gen, :arc, :branch, :storage, :ref_buses, :vmax, :vmin, :pmax, :pmin, :qmax, :qmin, :angmax, :angmin, :rate_a, :vm0, :va0, :pg0, :qg0, :pdmax, :pcmax, :srating, :emax)})(itr::Base.Generator{@NamedTuple{baseMVA::Vector{Float64}, bus::Vector{ExaPowerIO.BusData{Float64}}, gen::Vector{ExaPowerIO.GenData{Float64}}, arc::Vector{ExaPowerIO.ArcData{Float64}}, branch::Vector{ExaPowerIO.BranchData{Float64}}, storage::Vector{@NamedTuple{i::Int64}}, ref_buses::Vector{Int64}, vmax::Vector{Float64}, vmin::Vector{Float64}, pmax::Vector{Float64}, pmin::Vector{Float64}, qmax::Vector{Float64}, qmin::Vector{Float64}, angmax::Vector{Float64}, angmin::Vector{Float64}, rate_a::Vector{Float64}, vm0::Vector{Float64}, va0::Vector{Float64}, pg0::Vector{Float64}, qg0::Vector{Float64}, pdmax::Vector{@NamedTuple{i::Int64}}, pcmax::Vector{@NamedTuple{i::Int64}}, srating::Vector{@NamedTuple{i::Int64}}, emax::Vector{@NamedTuple{i::Int64}}}, ExaModelsPower.var"#convert_data##0#convert_data##1"{oneAPIBackend}})
+│        @ Base ./namedtuple.jl:149
+│     [21] convert_data(data::@NamedTuple{baseMVA::Vector{Float64}, bus::Vector{ExaPowerIO.BusData{Float64}}, gen::Vector{ExaPowerIO.GenData{Float64}}, arc::Vector{ExaPowerIO.ArcData{Float64}}, branch::Vector{ExaPowerIO.BranchData{Float64}}, storage::Vector{@NamedTuple{i::Int64}}, ref_buses::Vector{Int64}, vmax::Vector{Float64}, vmin::Vector{Float64}, pmax::Vector{Float64}, pmin::Vector{Float64}, qmax::Vector{Float64}, qmin::Vector{Float64}, angmax::Vector{Float64}, angmin::Vector{Float64}, rate_a::Vector{Float64}, vm0::Vector{Float64}, va0::Vector{Float64}, pg0::Vector{Float64}, qg0::Vector{Float64}, pdmax::Vector{@NamedTuple{i::Int64}}, pcmax::Vector{@NamedTuple{i::Int64}}, srating::Vector{@NamedTuple{i::Int64}}, emax::Vector{@NamedTuple{i::Int64}}}, backend::oneAPIBackend)
+│        @ ExaModelsPower ~/.julia/packages/ExaModelsPower/UStrU/src/parser.jl:1
+│     [22] ac_opf_model(filename::String; backend::oneAPIBackend, T::Type, form::Symbol, user_callback::Function, kwargs::@Kwargs{})
+│        @ ExaModelsPower ~/.julia/packages/ExaModelsPower/UStrU/src/opf.jl:226
+│     [23] build_examodels_opf(filename::String; backend::oneAPIBackend, form::Symbol, T::Type)
+│        @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:118
+│     [24] build_examodels_opf
+│        @ /tmp/exa-wf-test/benchmark/benchmark.jl:117 [inlined]
+│     [25] run_examodels(; backend::oneAPIBackend, seconds::Float64, suites::Vector{String}, T::Type)
+│        @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:367
+│     [26] main()
+│        @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:552
+│     [27] top-level scope
+│        @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [28] include(mod::Module, _path::String)
+│        @ Base ./Base.jl:306
+│     [29] exec_options(opts::Base.JLOptions)
+│        @ Base ./client.jl:317
+│     [30] _start()
+│        @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:372
+[ Info: OPF ExaModels (rect): pglib_opf_case2869_pegase.m
+[ Info: Loading matpower file
+┌ Warning: Failed: OPF ExaModels (rect) pglib_opf_case2869_pegase.m
+│   exception =
+│    Float64 is not supported on this device
+│    Stacktrace:
+│      [1] error(s::String)
+│        @ Base ./error.jl:44
+│      [2] check_eltype(T::Type)
+│        @ oneAPI ~/.julia/packages/oneAPI/x1T59/src/array.jl:40
+│      [3] oneArray{Float64, 1, oneAPI.oneL0.DeviceBuffer}(::UndefInitializer, dims::Tuple{Int64})
+│        @ oneAPI ~/.julia/packages/oneAPI/x1T59/src/array.jl:92
+│      [4] oneArray
+│        @ ~/.julia/packages/oneAPI/x1T59/src/array.jl:302 [inlined]
+│      [5] oneArray
+│        @ ~/.julia/packages/oneAPI/x1T59/src/array.jl:307 [inlined]
+│      [6] oneArray
+│        @ ~/.julia/packages/oneAPI/x1T59/src/array.jl:316 [inlined]
+│      [7] convert
+│        @ ~/.julia/packages/GPUArrays/V2qKA/src/host/construction.jl:4 [inlined]
+│      [8] adapt_storage
+│        @ ~/.julia/packages/oneAPI/x1T59/src/array.jl:503 [inlined]
+│      [9] adapt_structure
+│        @ ~/.julia/packages/Adapt/eGgVH/src/Adapt.jl:50 [inlined]
+│     [10] adapt
+│        @ ~/.julia/packages/Adapt/eGgVH/src/Adapt.jl:40 [inlined]
+│     [11] adapt_storage
+│        @ ~/.julia/packages/oneAPI/x1T59/src/oneAPIKernels.jl:36 [inlined]
+│     [12] adapt_structure
+│        @ ~/.julia/packages/Adapt/eGgVH/src/Adapt.jl:50 [inlined]
+│     [13] adapt
+│        @ ~/.julia/packages/Adapt/eGgVH/src/Adapt.jl:40 [inlined]
+│     [14] convert_array
+│        @ ~/.julia/packages/ExaModels/b44x9/src/templates.jl:3 [inlined]
+│     [15] #convert_data##0
+│        @ ./none:-1 [inlined]
+│     [16] iterate
+│        @ ./generator.jl:48 [inlined]
+│     [17] collect
+│        @ ./array.jl:790 [inlined]
+│     [18] _totuple
+│        @ ./tuple.jl:488 [inlined]
+│     [19] Tuple
+│        @ ./tuple.jl:454 [inlined]
+│     [20] (NamedTuple{(:baseMVA, :bus, :gen, :arc, :branch, :storage, :ref_buses, :vmax, :vmin, :pmax, :pmin, :qmax, :qmin, :angmax, :angmin, :rate_a, :vm0, :va0, :pg0, :qg0, :pdmax, :pcmax, :srating, :emax)})(itr::Base.Generator{@NamedTuple{baseMVA::Vector{Float64}, bus::Vector{ExaPowerIO.BusData{Float64}}, gen::Vector{ExaPowerIO.GenData{Float64}}, arc::Vector{ExaPowerIO.ArcData{Float64}}, branch::Vector{ExaPowerIO.BranchData{Float64}}, storage::Vector{@NamedTuple{i::Int64}}, ref_buses::Vector{Int64}, vmax::Vector{Float64}, vmin::Vector{Float64}, pmax::Vector{Float64}, pmin::Vector{Float64}, qmax::Vector{Float64}, qmin::Vector{Float64}, angmax::Vector{Float64}, angmin::Vector{Float64}, rate_a::Vector{Float64}, vm0::Vector{Float64}, va0::Vector{Float64}, pg0::Vector{Float64}, qg0::Vector{Float64}, pdmax::Vector{@NamedTuple{i::Int64}}, pcmax::Vector{@NamedTuple{i::Int64}}, srating::Vector{@NamedTuple{i::Int64}}, emax::Vector{@NamedTuple{i::Int64}}}, ExaModelsPower.var"#convert_data##0#convert_data##1"{oneAPIBackend}})
+│        @ Base ./namedtuple.jl:149
+│     [21] convert_data(data::@NamedTuple{baseMVA::Vector{Float64}, bus::Vector{ExaPowerIO.BusData{Float64}}, gen::Vector{ExaPowerIO.GenData{Float64}}, arc::Vector{ExaPowerIO.ArcData{Float64}}, branch::Vector{ExaPowerIO.BranchData{Float64}}, storage::Vector{@NamedTuple{i::Int64}}, ref_buses::Vector{Int64}, vmax::Vector{Float64}, vmin::Vector{Float64}, pmax::Vector{Float64}, pmin::Vector{Float64}, qmax::Vector{Float64}, qmin::Vector{Float64}, angmax::Vector{Float64}, angmin::Vector{Float64}, rate_a::Vector{Float64}, vm0::Vector{Float64}, va0::Vector{Float64}, pg0::Vector{Float64}, qg0::Vector{Float64}, pdmax::Vector{@NamedTuple{i::Int64}}, pcmax::Vector{@NamedTuple{i::Int64}}, srating::Vector{@NamedTuple{i::Int64}}, emax::Vector{@NamedTuple{i::Int64}}}, backend::oneAPIBackend)
+│        @ ExaModelsPower ~/.julia/packages/ExaModelsPower/UStrU/src/parser.jl:1
+│     [22] ac_opf_model(filename::String; backend::oneAPIBackend, T::Type, form::Symbol, user_callback::Function, kwargs::@Kwargs{})
+│        @ ExaModelsPower ~/.julia/packages/ExaModelsPower/UStrU/src/opf.jl:226
+│     [23] build_examodels_opf(filename::String; backend::oneAPIBackend, form::Symbol, T::Type)
+│        @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:118
+│     [24] build_examodels_opf
+│        @ /tmp/exa-wf-test/benchmark/benchmark.jl:117 [inlined]
+│     [25] run_examodels(; backend::oneAPIBackend, seconds::Float64, suites::Vector{String}, T::Type)
+│        @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:367
+│     [26] main()
+│        @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:552
+│     [27] top-level scope
+│        @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [28] include(mod::Module, _path::String)
+│        @ Base ./Base.jl:306
+│     [29] exec_options(opts::Base.JLOptions)
+│        @ Base ./client.jl:317
+│     [30] _start()
+│        @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:372
+[ Info: OPF ExaModels (rect): pglib_opf_case9241_pegase.m
+[ Info: Loading matpower file
+┌ Warning: Failed: OPF ExaModels (rect) pglib_opf_case9241_pegase.m
+│   exception =
+│    Float64 is not supported on this device
+│    Stacktrace:
+│      [1] error(s::String)
+│        @ Base ./error.jl:44
+│      [2] check_eltype(T::Type)
+│        @ oneAPI ~/.julia/packages/oneAPI/x1T59/src/array.jl:40
+│      [3] oneArray{Float64, 1, oneAPI.oneL0.DeviceBuffer}(::UndefInitializer, dims::Tuple{Int64})
+│        @ oneAPI ~/.julia/packages/oneAPI/x1T59/src/array.jl:92
+│      [4] oneArray
+│        @ ~/.julia/packages/oneAPI/x1T59/src/array.jl:302 [inlined]
+│      [5] oneArray
+│        @ ~/.julia/packages/oneAPI/x1T59/src/array.jl:307 [inlined]
+│      [6] oneArray
+│        @ ~/.julia/packages/oneAPI/x1T59/src/array.jl:316 [inlined]
+│      [7] convert
+│        @ ~/.julia/packages/GPUArrays/V2qKA/src/host/construction.jl:4 [inlined]
+│      [8] adapt_storage
+│        @ ~/.julia/packages/oneAPI/x1T59/src/array.jl:503 [inlined]
+│      [9] adapt_structure
+│        @ ~/.julia/packages/Adapt/eGgVH/src/Adapt.jl:50 [inlined]
+│     [10] adapt
+│        @ ~/.julia/packages/Adapt/eGgVH/src/Adapt.jl:40 [inlined]
+│     [11] adapt_storage
+│        @ ~/.julia/packages/oneAPI/x1T59/src/oneAPIKernels.jl:36 [inlined]
+│     [12] adapt_structure
+│        @ ~/.julia/packages/Adapt/eGgVH/src/Adapt.jl:50 [inlined]
+│     [13] adapt
+│        @ ~/.julia/packages/Adapt/eGgVH/src/Adapt.jl:40 [inlined]
+│     [14] convert_array
+│        @ ~/.julia/packages/ExaModels/b44x9/src/templates.jl:3 [inlined]
+│     [15] #convert_data##0
+│        @ ./none:-1 [inlined]
+│     [16] iterate
+│        @ ./generator.jl:48 [inlined]
+│     [17] collect
+│        @ ./array.jl:790 [inlined]
+│     [18] _totuple
+│        @ ./tuple.jl:488 [inlined]
+│     [19] Tuple
+│        @ ./tuple.jl:454 [inlined]
+│     [20] (NamedTuple{(:baseMVA, :bus, :gen, :arc, :branch, :storage, :ref_buses, :vmax, :vmin, :pmax, :pmin, :qmax, :qmin, :angmax, :angmin, :rate_a, :vm0, :va0, :pg0, :qg0, :pdmax, :pcmax, :srating, :emax)})(itr::Base.Generator{@NamedTuple{baseMVA::Vector{Float64}, bus::Vector{ExaPowerIO.BusData{Float64}}, gen::Vector{ExaPowerIO.GenData{Float64}}, arc::Vector{ExaPowerIO.ArcData{Float64}}, branch::Vector{ExaPowerIO.BranchData{Float64}}, storage::Vector{@NamedTuple{i::Int64}}, ref_buses::Vector{Int64}, vmax::Vector{Float64}, vmin::Vector{Float64}, pmax::Vector{Float64}, pmin::Vector{Float64}, qmax::Vector{Float64}, qmin::Vector{Float64}, angmax::Vector{Float64}, angmin::Vector{Float64}, rate_a::Vector{Float64}, vm0::Vector{Float64}, va0::Vector{Float64}, pg0::Vector{Float64}, qg0::Vector{Float64}, pdmax::Vector{@NamedTuple{i::Int64}}, pcmax::Vector{@NamedTuple{i::Int64}}, srating::Vector{@NamedTuple{i::Int64}}, emax::Vector{@NamedTuple{i::Int64}}}, ExaModelsPower.var"#convert_data##0#convert_data##1"{oneAPIBackend}})
+│        @ Base ./namedtuple.jl:149
+│     [21] convert_data(data::@NamedTuple{baseMVA::Vector{Float64}, bus::Vector{ExaPowerIO.BusData{Float64}}, gen::Vector{ExaPowerIO.GenData{Float64}}, arc::Vector{ExaPowerIO.ArcData{Float64}}, branch::Vector{ExaPowerIO.BranchData{Float64}}, storage::Vector{@NamedTuple{i::Int64}}, ref_buses::Vector{Int64}, vmax::Vector{Float64}, vmin::Vector{Float64}, pmax::Vector{Float64}, pmin::Vector{Float64}, qmax::Vector{Float64}, qmin::Vector{Float64}, angmax::Vector{Float64}, angmin::Vector{Float64}, rate_a::Vector{Float64}, vm0::Vector{Float64}, va0::Vector{Float64}, pg0::Vector{Float64}, qg0::Vector{Float64}, pdmax::Vector{@NamedTuple{i::Int64}}, pcmax::Vector{@NamedTuple{i::Int64}}, srating::Vector{@NamedTuple{i::Int64}}, emax::Vector{@NamedTuple{i::Int64}}}, backend::oneAPIBackend)
+│        @ ExaModelsPower ~/.julia/packages/ExaModelsPower/UStrU/src/parser.jl:1
+│     [22] ac_opf_model(filename::String; backend::oneAPIBackend, T::Type, form::Symbol, user_callback::Function, kwargs::@Kwargs{})
+│        @ ExaModelsPower ~/.julia/packages/ExaModelsPower/UStrU/src/opf.jl:226
+│     [23] build_examodels_opf(filename::String; backend::oneAPIBackend, form::Symbol, T::Type)
+│        @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:118
+│     [24] build_examodels_opf
+│        @ /tmp/exa-wf-test/benchmark/benchmark.jl:117 [inlined]
+│     [25] run_examodels(; backend::oneAPIBackend, seconds::Float64, suites::Vector{String}, T::Type)
+│        @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:367
+│     [26] main()
+│        @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:552
+│     [27] top-level scope
+│        @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [28] include(mod::Module, _path::String)
+│        @ Base ./Base.jl:306
+│     [29] exec_options(opts::Base.JLOptions)
+│        @ Base ./client.jl:317
+│     [30] _start()
+│        @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:372
+[ Info: Results saved to results/shin-compute-002_oneAPI-Intel(R)_Arc(TM)_A770_Graphics_fp32_OPF.csv (0 rows)
