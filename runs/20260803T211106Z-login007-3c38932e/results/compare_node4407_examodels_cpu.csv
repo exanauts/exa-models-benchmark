@@ -1,0 +1,2 @@
+framework,device,n,threads,tgrad_ms,thess_ms,nnzh,hostname
+examodels,cpu,200000,1,0.566384,1.054347,599997,node4407

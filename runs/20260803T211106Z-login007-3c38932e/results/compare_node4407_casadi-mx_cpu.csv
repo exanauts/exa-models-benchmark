@@ -1,0 +1,2 @@
+framework,device,n,threads,tgrad_ms,thess_ms,cpu_wall_ratio,hostname,commit
+casadi-mx,cpu,200000,1,10.008504847064614,15.425845049321651,1.0,node4407,c7b6cfb
