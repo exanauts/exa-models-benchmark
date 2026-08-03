@@ -1,0 +1,47 @@
+run_id = "20260803T161342Z-node2808-f7b6ba29"
+timestamp_utc = "20260803T161342Z"
+hostname = "node2808"
+uname = "Linux node2808 4.18.0-372.9.1.el8.x86_64 #1 SMP Tue May 10 14:48:47 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux"
+julia = "julia version 1.12.0"
+code_commit = "88583e7f75ce50d83f0d1236587533c6a6b503f3"
+files = [
+    "code/benchmark.jl",
+    "code/cases.jl",
+    "code/cases_minimal.jl",
+    "code/cases_quick.jl",
+    "code/compare/compare_ad.jl",
+    "code/compare/compare_ad.py",
+    "code/compare/compare_cold.jl",
+    "code/compare/compare_cold.py",
+    "code/compare/requirements.in",
+    "code/compare/requirements.lock",
+    "code/example.sbatch",
+    "code/Makefile",
+    "code/Project.toml",
+    "code/save_results.sh",
+    "Manifest.toml",
+    "results/logs/node2808_reference_shard1of8_20260803T131658Z.log",
+    "results/logs/node2808_reference_shard2of8_20260803T131658Z.log",
+    "results/logs/node2808_reference_shard3of8_20260803T131658Z.log",
+    "results/logs/node2808_reference_shard4of8_20260803T131658Z.log",
+    "results/logs/node2808_reference_shard5of8_20260803T131658Z.log",
+    "results/logs/node2808_reference_shard6of8_20260803T131658Z.log",
+    "results/logs/node2808_reference_shard7of8_20260803T131658Z.log",
+    "results/logs/node2808_reference_shard8of8_20260803T131658Z.log",
+    "results/node2808_reference_shard1of8.csv",
+    "results/node2808_reference_shard1of8_hw.toml",
+    "results/node2808_reference_shard2of8.csv",
+    "results/node2808_reference_shard2of8_hw.toml",
+    "results/node2808_reference_shard3of8.csv",
+    "results/node2808_reference_shard3of8_hw.toml",
+    "results/node2808_reference_shard4of8.csv",
+    "results/node2808_reference_shard4of8_hw.toml",
+    "results/node2808_reference_shard5of8.csv",
+    "results/node2808_reference_shard5of8_hw.toml",
+    "results/node2808_reference_shard6of8.csv",
+    "results/node2808_reference_shard6of8_hw.toml",
+    "results/node2808_reference_shard7of8.csv",
+    "results/node2808_reference_shard7of8_hw.toml",
+    "results/node2808_reference_shard8of8.csv",
+    "results/node2808_reference_shard8of8_hw.toml",
+]
