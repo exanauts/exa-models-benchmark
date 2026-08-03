@@ -1,2 +1,0 @@
-run_id = "legacy-20260522-group-nodes"
-note = "Backup of the pre-pipeline benchmark artifacts: raw CSVs from the nodes' WIP checkout (May 2026 state, produced the paper's original tables), ad-hoc comparison outputs (benchmark/results/), and untracked Metal run files from pro. Archived 2026-08-03 before cleanup; superseded by regenerated campaign runs."

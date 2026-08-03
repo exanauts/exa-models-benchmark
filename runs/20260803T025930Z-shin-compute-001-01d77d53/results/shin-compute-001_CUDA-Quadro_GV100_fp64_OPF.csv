@@ -1,9 +1,0 @@
-suite,problem,size,ams,nvar,ncon,nnzj,nnzh,tobj,tcon,tgrad,tjac,thess,thprod,tjprod,tjtprod,tcreate
-OPF-polar,pglib_opf_case118_ieee.m,pglib_opf_case118_ieee.m,ExaModels,1088,1539,5925,8474,2.9067e-5,0.00022669,2.3244e-5,0.000192358,0.000211463,NaN,NaN,NaN,0.003859818
-OPF-polar,pglib_opf_case1354_pegase.m,pglib_opf_case1354_pegase.m,ExaModels,11192,16646,62959,90572,3.0284e-5,0.000233678,2.3195e-5,0.000198364,0.000225349,NaN,NaN,NaN,0.011056865
-OPF-polar,pglib_opf_case2869_pegase.m,pglib_opf_case2869_pegase.m,ExaModels,25086,37813,144219,207856,3.0819e-5,0.000232992,2.4125e-5,0.000191428,0.000219597,NaN,NaN,NaN,0.021540127
-OPF-polar,pglib_opf_case9241_pegase.m,pglib_opf_case9241_pegase.m,ExaModels,85568,130826,502843,726083,4.3761e-5,0.000243613,2.316e-5,0.000190912,0.000220671,NaN,NaN,NaN,0.061100413
-OPF-rect,pglib_opf_case118_ieee.m,pglib_opf_case118_ieee.m,ExaModels,1088,1657,6770,8577,3.0133e-5,0.000289672,2.4294e-5,0.00022561,0.000263906,NaN,NaN,NaN,0.003878283
-OPF-rect,pglib_opf_case1354_pegase.m,pglib_opf_case1354_pegase.m,ExaModels,11192,18000,72358,92009,3.0088e-5,0.000285465,2.3041e-5,0.000217306,0.000262957,NaN,NaN,NaN,0.011100334
-OPF-rect,pglib_opf_case2869_pegase.m,pglib_opf_case2869_pegase.m,ExaModels,25086,40682,164860,210171,3.059e-5,0.000279474,2.4032e-5,0.00021808,0.000264636,NaN,NaN,NaN,0.020258286
-OPF-rect,pglib_opf_case9241_pegase.m,pglib_opf_case9241_pegase.m,ExaModels,85568,140067,571906,730952,4.5607e-5,0.000277725,2.4448e-5,0.000227703,0.000266418,NaN,NaN,NaN,0.065644441

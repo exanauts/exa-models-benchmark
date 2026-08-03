@@ -1,2 +1,0 @@
-framework,device,n,threads,tgrad_ms,thess_ms,cpu_wall_ratio,hostname
-torch,cpu,20000,1,0.44610630720853806,3.4869848750531673,1.0,shin-compute-002

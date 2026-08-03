@@ -1,3 +1,0 @@
-
-[526403] signal 11 (128): Segmentation fault
-in expression starting at /home/sushin/git/exa-models-paper/benchmark/rosenbrock_examodels_large.jl:38
