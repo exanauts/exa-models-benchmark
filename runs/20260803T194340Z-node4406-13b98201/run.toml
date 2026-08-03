@@ -1,9 +1,9 @@
-run_id = "20260803T163621Z-node2109-17d7138e"
-timestamp_utc = "20260803T163621Z"
+run_id = "20260803T194340Z-node4406-13b98201"
+timestamp_utc = "20260803T194340Z"
 hostname = "login007"
 uname = "Linux login007 5.14.0-687.30.1.el9_8.x86_64 #1 SMP PREEMPT_DYNAMIC Wed Jul 22 16:36:34 EDT 2026 x86_64 x86_64 x86_64 GNU/Linux"
 julia = "julia version 1.12.0"
-code_commit = "746777f473efa95f32d16de3fe203557ebc61835"
+code_commit = "d2226fc58716b184d1a2d7aea567de43e9d5b475"
 files = [
     "code/benchmark.jl",
     "code/cases.jl",
@@ -29,12 +29,11 @@ files = [
     "code/slurm/orcd-cpu.sbatch",
     "code/slurm/orcd-nvidia-a100.sbatch",
     "code/slurm/orcd-nvidia-h100.sbatch",
-    "code/slurm/orcd-nvidia-h200.sbatch",
     "code/slurm/orcd-nvidia-l40s.sbatch",
     "code/slurm/orcd-nvidia-pro6000.sbatch",
     "code/slurm/orcd-reference.sbatch",
     "Manifest.toml",
-    "results/logs/node2109_CPU_20260803T152414Z.log",
-    "results/node2109_CPU-16T_fp64.csv",
-    "results/node2109_CPU-16T_fp64_hw.toml",
+    "results/logs/node4406_CPU_20260803T180951Z.log",
+    "results/node4406_CPU-16T_fp64.csv",
+    "results/node4406_CPU-16T_fp64_hw.toml",
 ]
