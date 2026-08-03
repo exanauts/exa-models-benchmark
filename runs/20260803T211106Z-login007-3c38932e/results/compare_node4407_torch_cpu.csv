@@ -1,2 +1,0 @@
-framework,device,n,threads,tgrad_ms,thess_ms,cpu_wall_ratio,hostname,commit
-torch,cpu,200000,1,1.191109186038375,7.87157891318202,0.99,node4407,c7b6cfb

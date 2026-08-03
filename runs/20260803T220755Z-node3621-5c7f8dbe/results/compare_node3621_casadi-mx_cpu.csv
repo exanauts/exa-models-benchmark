@@ -1,6 +1,0 @@
-framework,device,n,threads,tobj_ms,tcons_ms,tgrad_ms,tjac_ms,thess_ms,variant,cpu_wall_ratio,hostname,commit
-casadi-mx,cpu,20,1,0.0022298190742731094,0.0031299423426389694,0.0022100284695625305,0.0038098078221082687,0.005010049790143967,"obj=mx/jit,cons=mx/jit,grad=mx/jit,jac=mx/codegen,hess=mx/jit",0.97,node3621,69525a4
-casadi-mx,cpu,200,1,0.0036098062992095947,0.013209879398345947,0.0034798868000507355,0.018490012735128403,0.028221169486641884,"obj=mx/interp,cons=mx/codegen,grad=mx/codegen,jac=mx/codegen,hess=mx/codegen",0.99,node3621,69525a4
-casadi-mx,cpu,2000,1,0.0135800801217556,0.11159083805978298,0.012770062312483788,0.16452092677354813,0.2678409218788147,"obj=mx/interp,cons=mx/codegen,grad=mx/interp,jac=mx/interp,hess=mx/codegen",1.0,node3621,69525a4
-casadi-mx,cpu,20000,1,0.11575105600059032,1.1061059776693583,0.10685110464692116,1.6731501091271639,2.700597047805786,"obj=mx/interp,cons=mx/codegen,grad=mx/codegen,jac=mx/interp,hess=mx/codegen",1.0,node3621,69525a4
-casadi-mx,cpu,200000,1,1.1279850732535124,11.11978804692626,1.0752049274742603,18.422219902276993,36.705157021060586,"obj=mx/interp,cons=mx/codegen,grad=mx/interp,jac=mx/interp,hess=mx/jit",1.0,node3621,69525a4

@@ -1,2 +1,0 @@
-framework,device,n,threads,tgrad_ms,thess_ms,cpu_wall_ratio,hostname,commit
-casadi-map,cpu,200000,1,10.409218026325107,27.790968073531985,1.0,node4407,c7b6cfb
