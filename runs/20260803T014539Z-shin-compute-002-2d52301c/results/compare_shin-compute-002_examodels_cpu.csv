@@ -1,0 +1,2 @@
+framework,device,n,threads,tgrad_ms,thess_ms,nnzh,hostname
+examodels,cpu,20000,1,0.095056,0.182515,59997,shin-compute-002

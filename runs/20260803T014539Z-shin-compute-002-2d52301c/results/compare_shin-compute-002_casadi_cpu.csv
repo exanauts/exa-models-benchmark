@@ -1,0 +1,2 @@
+framework,device,n,threads,tgrad_ms,thess_ms,cpu_wall_ratio,hostname
+casadi,cpu,20000,1,1.6427277587354183,2.385911997407675,1.0,shin-compute-002

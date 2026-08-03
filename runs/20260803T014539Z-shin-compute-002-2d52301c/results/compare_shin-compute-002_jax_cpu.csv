@@ -1,0 +1,2 @@
+framework,device,n,threads,tgrad_ms,thess_ms,cpu_wall_ratio,hostname
+jax,cpu,20000,1,0.028584618121385574,0.25550415739417076,1.0,shin-compute-002

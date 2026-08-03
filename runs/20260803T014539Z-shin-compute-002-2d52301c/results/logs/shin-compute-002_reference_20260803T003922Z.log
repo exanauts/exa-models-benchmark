@@ -1,0 +1,12 @@
+[info | PowerModels]: Suppressing information and warning messages for the rest of this session.  Use the Memento package for more fine-grained control of logging.
+┌ Info: Running reference benchmarks (JuMP + AMPL)
+└   seconds = 0.1
+[ Info: [OPF JuMP 1/8] polar/pglib_opf_case118_ieee.m (elapsed 0s)
+[ Info: [OPF JuMP 2/8] polar/pglib_opf_case1354_pegase.m (elapsed 23s)
+[ Info: [OPF JuMP 3/8] polar/pglib_opf_case2869_pegase.m (elapsed 34s)
+[ Info: [OPF JuMP 4/8] polar/pglib_opf_case9241_pegase.m (elapsed 54s)
+[ Info: [OPF JuMP 5/8] rect/pglib_opf_case118_ieee.m (elapsed 136s)
+[ Info: [OPF JuMP 6/8] rect/pglib_opf_case1354_pegase.m (elapsed 144s)
+[ Info: [OPF JuMP 7/8] rect/pglib_opf_case2869_pegase.m (elapsed 153s)
+[ Info: [OPF JuMP 8/8] rect/pglib_opf_case9241_pegase.m (elapsed 171s)
+[ Info: Results saved to results/shin-compute-002_reference.csv (8 rows)

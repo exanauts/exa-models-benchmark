@@ -1,0 +1,53 @@
+[info | PowerModels]: Suppressing information and warning messages for the rest of this session.  Use the Memento package for more fine-grained control of logging.
+Precompiling packages...
+    AMDGPU Being precompiled by another process (pid: 1163604, pidfile: /home/sushin/.julia/compiled/v1.12/AMDGPU/arpZD_8YLMf.ji.pidfile)
+  76952.2 ms  ✓ AMDGPU
+  1 dependency successfully precompiled in 78 seconds. 93 already precompiled.
+ERROR: LoadError: InitError: HIPError(code hipErrorNoDevice, no device found)
+Stacktrace:
+  [1] check
+    @ ~/.julia/packages/AMDGPU/Z4UN5/src/hip/error.jl:145 [inlined]
+  [2] macro expansion
+    @ ~/.julia/packages/AMDGPU/Z4UN5/src/utils.jl:123 [inlined]
+  [3] hipGetDeviceCount(count::Base.RefValue{Int32})
+    @ AMDGPU.HIP ~/.julia/packages/AMDGPU/Z4UN5/src/hip/libhip.jl:3756
+  [4] ndevices
+    @ ~/.julia/packages/AMDGPU/Z4UN5/src/hip/device.jl:103 [inlined]
+  [5] devices()
+    @ AMDGPU.HIP ~/.julia/packages/AMDGPU/Z4UN5/src/hip/device.jl:115
+  [6] __init__()
+    @ AMDGPU ~/.julia/packages/AMDGPU/Z4UN5/src/AMDGPU.jl:200
+  [7] run_module_init(mod::Module, i::Int64)
+    @ Base ./loading.jl:1445
+  [8] register_restored_modules(sv::Core.SimpleVector, pkg::Base.PkgId, path::String)
+    @ Base ./loading.jl:1433
+  [9] _include_from_serialized(pkg::Base.PkgId, path::String, ocachepath::String, depmods::Vector{Any}; register::Bool)
+    @ Base ./loading.jl:1321
+ [10] _include_from_serialized
+    @ ./loading.jl:1276 [inlined]
+ [11] _require_search_from_serialized(pkg::Base.PkgId, sourcepath::String, build_id::UInt128, stalecheck::Bool; reasons::Dict{String, Int64}, DEPOT_PATH::Vector{String})
+    @ Base ./loading.jl:2117
+ [12] _require_search_from_serialized
+    @ ./loading.jl:2011 [inlined]
+ [13] __require_prelocked(pkg::Base.PkgId, env::String)
+    @ Base ./loading.jl:2629
+ [14] _require_prelocked(uuidkey::Base.PkgId, env::String)
+    @ Base ./loading.jl:2495
+ [15] macro expansion
+    @ ./loading.jl:2423 [inlined]
+ [16] macro expansion
+    @ ./lock.jl:376 [inlined]
+ [17] __require(into::Module, mod::Symbol)
+    @ Base ./loading.jl:2388
+ [18] require(into::Module, mod::Symbol)
+    @ Base ./loading.jl:2364
+ [19] top-level scope
+    @ /tmp/exa-wf-test/benchmark/benchmark.jl:32
+ [20] include(mod::Module, _path::String)
+    @ Base ./Base.jl:306
+ [21] exec_options(opts::Base.JLOptions)
+    @ Base ./client.jl:317
+ [22] _start()
+    @ Base ./client.jl:550
+during initialization of module AMDGPU
+in expression starting at /tmp/exa-wf-test/benchmark/benchmark.jl:29

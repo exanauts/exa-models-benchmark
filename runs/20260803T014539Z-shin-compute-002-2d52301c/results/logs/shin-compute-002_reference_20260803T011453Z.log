@@ -1,0 +1,252 @@
+[info | PowerModels]: Suppressing information and warning messages for the rest of this session.  Use the Memento package for more fine-grained control of logging.
+┌ Info: Running reference benchmarks (JuMP + AMPL)
+└   seconds = 0.1
+[ Info: [OPF JuMP 1/8] polar/pglib_opf_case118_ieee.m (elapsed 0s)
+[ Info: [OPF JuMP 2/8] polar/pglib_opf_case1354_pegase.m (elapsed 23s)
+[ Info: [OPF JuMP 3/8] polar/pglib_opf_case2869_pegase.m (elapsed 34s)
+[ Info: [OPF JuMP 4/8] polar/pglib_opf_case9241_pegase.m (elapsed 54s)
+[ Info: [OPF JuMP 5/8] rect/pglib_opf_case118_ieee.m (elapsed 136s)
+[ Info: [OPF JuMP 6/8] rect/pglib_opf_case1354_pegase.m (elapsed 143s)
+[ Info: [OPF JuMP 7/8] rect/pglib_opf_case2869_pegase.m (elapsed 153s)
+[ Info: [OPF JuMP 8/8] rect/pglib_opf_case9241_pegase.m (elapsed 171s)
+[ Info: [OPF AMPL 1/8] polar/pglib_opf_case118_ieee.m (elapsed 295s)
+┌ Warning: Failed: OPF AMPL (polar) pglib_opf_case118_ieee.m
+│   exception =
+│    MethodError: no method matching write_to_file(::MathOptNLPModel, ::String)
+│    The function `write_to_file` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      write_to_file(!Matched::GenericModel, ::String; format, kwargs...)
+│       @ JuMP ~/.julia/packages/JuMP/EHXNP/src/file_formats.jl:125
+│    
+│    Stacktrace:
+│     [1] with_timeout(seconds::Float64, body::var"#120#121"{Float64, String, Symbol, String, typeof(build_jump_opf_polar)})
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:222
+│     [2] with_timeout(body::Function, seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:209
+│     [3] run_reference(; seconds::Float64, suites::Vector{String})
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:735
+│     [4] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:581 [inlined]
+│     [5] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:816
+│     [6] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:844
+│     [7] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [8] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [9] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:748
+[ Info: [OPF AMPL 2/8] polar/pglib_opf_case1354_pegase.m (elapsed 298s)
+┌ Warning: Failed: OPF AMPL (polar) pglib_opf_case1354_pegase.m
+│   exception =
+│    MethodError: no method matching write_to_file(::MathOptNLPModel, ::String)
+│    The function `write_to_file` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      write_to_file(!Matched::GenericModel, ::String; format, kwargs...)
+│       @ JuMP ~/.julia/packages/JuMP/EHXNP/src/file_formats.jl:125
+│    
+│    Stacktrace:
+│     [1] with_timeout(seconds::Float64, body::var"#120#121"{Float64, String, Symbol, String, typeof(build_jump_opf_polar)})
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:222
+│     [2] with_timeout(body::Function, seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:209
+│     [3] run_reference(; seconds::Float64, suites::Vector{String})
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:735
+│     [4] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:581 [inlined]
+│     [5] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:816
+│     [6] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:844
+│     [7] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [8] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [9] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:748
+[ Info: [OPF AMPL 3/8] polar/pglib_opf_case2869_pegase.m (elapsed 300s)
+┌ Warning: Failed: OPF AMPL (polar) pglib_opf_case2869_pegase.m
+│   exception =
+│    MethodError: no method matching write_to_file(::MathOptNLPModel, ::String)
+│    The function `write_to_file` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      write_to_file(!Matched::GenericModel, ::String; format, kwargs...)
+│       @ JuMP ~/.julia/packages/JuMP/EHXNP/src/file_formats.jl:125
+│    
+│    Stacktrace:
+│     [1] with_timeout(seconds::Float64, body::var"#120#121"{Float64, String, Symbol, String, typeof(build_jump_opf_polar)})
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:222
+│     [2] with_timeout(body::Function, seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:209
+│     [3] run_reference(; seconds::Float64, suites::Vector{String})
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:735
+│     [4] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:581 [inlined]
+│     [5] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:816
+│     [6] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:844
+│     [7] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [8] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [9] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:748
+[ Info: [OPF AMPL 4/8] polar/pglib_opf_case9241_pegase.m (elapsed 303s)
+┌ Warning: Failed: OPF AMPL (polar) pglib_opf_case9241_pegase.m
+│   exception =
+│    MethodError: no method matching write_to_file(::MathOptNLPModel, ::String)
+│    The function `write_to_file` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      write_to_file(!Matched::GenericModel, ::String; format, kwargs...)
+│       @ JuMP ~/.julia/packages/JuMP/EHXNP/src/file_formats.jl:125
+│    
+│    Stacktrace:
+│     [1] with_timeout(seconds::Float64, body::var"#120#121"{Float64, String, Symbol, String, typeof(build_jump_opf_polar)})
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:222
+│     [2] with_timeout(body::Function, seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:209
+│     [3] run_reference(; seconds::Float64, suites::Vector{String})
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:735
+│     [4] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:581 [inlined]
+│     [5] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:816
+│     [6] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:844
+│     [7] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [8] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [9] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:748
+[ Info: [OPF AMPL 5/8] rect/pglib_opf_case118_ieee.m (elapsed 315s)
+┌ Warning: Failed: OPF AMPL (rect) pglib_opf_case118_ieee.m
+│   exception =
+│    MethodError: no method matching write_to_file(::MathOptNLPModel, ::String)
+│    The function `write_to_file` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      write_to_file(!Matched::GenericModel, ::String; format, kwargs...)
+│       @ JuMP ~/.julia/packages/JuMP/EHXNP/src/file_formats.jl:125
+│    
+│    Stacktrace:
+│     [1] with_timeout(seconds::Float64, body::var"#120#121"{Float64, String, Symbol, String, typeof(build_jump_opf_rect)})
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:222
+│     [2] with_timeout(body::Function, seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:209
+│     [3] run_reference(; seconds::Float64, suites::Vector{String})
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:735
+│     [4] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:581 [inlined]
+│     [5] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:816
+│     [6] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:844
+│     [7] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [8] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [9] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:748
+[ Info: [OPF AMPL 6/8] rect/pglib_opf_case1354_pegase.m (elapsed 316s)
+┌ Warning: Failed: OPF AMPL (rect) pglib_opf_case1354_pegase.m
+│   exception =
+│    MethodError: no method matching write_to_file(::MathOptNLPModel, ::String)
+│    The function `write_to_file` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      write_to_file(!Matched::GenericModel, ::String; format, kwargs...)
+│       @ JuMP ~/.julia/packages/JuMP/EHXNP/src/file_formats.jl:125
+│    
+│    Stacktrace:
+│     [1] with_timeout(seconds::Float64, body::var"#120#121"{Float64, String, Symbol, String, typeof(build_jump_opf_rect)})
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:222
+│     [2] with_timeout(body::Function, seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:209
+│     [3] run_reference(; seconds::Float64, suites::Vector{String})
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:735
+│     [4] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:581 [inlined]
+│     [5] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:816
+│     [6] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:844
+│     [7] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [8] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [9] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:748
+[ Info: [OPF AMPL 7/8] rect/pglib_opf_case2869_pegase.m (elapsed 317s)
+┌ Warning: Failed: OPF AMPL (rect) pglib_opf_case2869_pegase.m
+│   exception =
+│    MethodError: no method matching write_to_file(::MathOptNLPModel, ::String)
+│    The function `write_to_file` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      write_to_file(!Matched::GenericModel, ::String; format, kwargs...)
+│       @ JuMP ~/.julia/packages/JuMP/EHXNP/src/file_formats.jl:125
+│    
+│    Stacktrace:
+│     [1] with_timeout(seconds::Float64, body::var"#120#121"{Float64, String, Symbol, String, typeof(build_jump_opf_rect)})
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:222
+│     [2] with_timeout(body::Function, seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:209
+│     [3] run_reference(; seconds::Float64, suites::Vector{String})
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:735
+│     [4] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:581 [inlined]
+│     [5] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:816
+│     [6] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:844
+│     [7] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [8] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [9] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:748
+[ Info: [OPF AMPL 8/8] rect/pglib_opf_case9241_pegase.m (elapsed 319s)
+┌ Warning: Failed: OPF AMPL (rect) pglib_opf_case9241_pegase.m
+│   exception =
+│    MethodError: no method matching write_to_file(::MathOptNLPModel, ::String)
+│    The function `write_to_file` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      write_to_file(!Matched::GenericModel, ::String; format, kwargs...)
+│       @ JuMP ~/.julia/packages/JuMP/EHXNP/src/file_formats.jl:125
+│    
+│    Stacktrace:
+│     [1] with_timeout(seconds::Float64, body::var"#120#121"{Float64, String, Symbol, String, typeof(build_jump_opf_rect)})
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:222
+│     [2] with_timeout(body::Function, seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:209
+│     [3] run_reference(; seconds::Float64, suites::Vector{String})
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:735
+│     [4] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:581 [inlined]
+│     [5] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:816
+│     [6] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:844
+│     [7] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [8] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [9] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:748
+[ Info: Results saved to results/shin-compute-002_reference_OPF.csv (8 rows)

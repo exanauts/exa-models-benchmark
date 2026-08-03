@@ -1,0 +1,52 @@
+Precompiling packages...
+   3317.3 ms  ✓ DifferentiationInterface → DifferentiationInterfaceForwardDiffExt
+   1224.8 ms  ✓ NLSolversBase
+   2547.8 ms  ✓ LineSearches
+   1623.7 ms  ✓ NLsolve
+  39093.6 ms  ✓ MathOptInterface
+  23659.6 ms  ✓ JuMP
+   3528.7 ms  ✓ InfrastructureModels
+  37818.3 ms  ✓ PowerModels
+  8 dependencies successfully precompiled in 106 seconds. 67 already precompiled.
+Precompiling packages...
+   2461.3 ms  ✓ MathOptInterface → MathOptInterfaceBenchmarkToolsExt
+  1 dependency successfully precompiled in 3 seconds. 49 already precompiled.
+[info | PowerModels]: Suppressing information and warning messages for the rest of this session.  Use the Memento package for more fine-grained control of logging.
+Precompiling packages...
+   2887.4 ms  ✓ ExaModels → ExaModelsSpecialFunctions
+  1 dependency successfully precompiled in 3 seconds. 37 already precompiled.
+Precompiling packages...
+   2893.5 ms  ✓ ExaModels → ExaModelsMOI
+   2951.8 ms  ✓ ExaModels → ExaModelsJuMP
+  2 dependencies successfully precompiled in 4 seconds. 58 already precompiled.
+Precompiling packages...
+   3708.0 ms  ✓ NLPModelsJuMP
+  1 dependency successfully precompiled in 4 seconds. 54 already precompiled.
+Precompiling packages...
+   2388.5 ms  ✓ AmplNLWriter
+  1 dependency successfully precompiled in 3 seconds. 67 already precompiled.
+Precompiling packages...
+   3297.8 ms  ✓ LuksanVlcekBenchmark → LuksanVlcekBenchmarkJuMP
+  1 dependency successfully precompiled in 4 seconds. 62 already precompiled.
+Precompiling packages...
+  21577.6 ms  ✓ COPSBenchmark → COPSBenchmarkJuMP
+  1 dependency successfully precompiled in 22 seconds. 45 already precompiled.
+┌ Info: Running reference benchmarks (JuMP + AMPL)
+└   seconds = 0.1
+[ Info: [OPF JuMP 1/8] polar/pglib_opf_case118_ieee.m (elapsed 0s)
+[ Info: [OPF JuMP 2/8] polar/pglib_opf_case1354_pegase.m (elapsed 23s)
+[ Info: [OPF JuMP 3/8] polar/pglib_opf_case2869_pegase.m (elapsed 33s)
+[ Info: [OPF JuMP 4/8] polar/pglib_opf_case9241_pegase.m (elapsed 54s)
+[ Info: [OPF JuMP 5/8] rect/pglib_opf_case118_ieee.m (elapsed 131s)
+[ Info: [OPF JuMP 6/8] rect/pglib_opf_case1354_pegase.m (elapsed 138s)
+[ Info: [OPF JuMP 7/8] rect/pglib_opf_case2869_pegase.m (elapsed 147s)
+[ Info: [OPF JuMP 8/8] rect/pglib_opf_case9241_pegase.m (elapsed 164s)
+[ Info: [OPF AMPL 1/8] polar/pglib_opf_case118_ieee.m (elapsed 274s)
+[ Info: [OPF AMPL 2/8] polar/pglib_opf_case1354_pegase.m (elapsed 294s)
+[ Info: [OPF AMPL 3/8] polar/pglib_opf_case2869_pegase.m (elapsed 302s)
+[ Info: [OPF AMPL 4/8] polar/pglib_opf_case9241_pegase.m (elapsed 312s)
+[ Info: [OPF AMPL 5/8] rect/pglib_opf_case118_ieee.m (elapsed 338s)
+[ Info: [OPF AMPL 6/8] rect/pglib_opf_case1354_pegase.m (elapsed 344s)
+[ Info: [OPF AMPL 7/8] rect/pglib_opf_case2869_pegase.m (elapsed 352s)
+[ Info: [OPF AMPL 8/8] rect/pglib_opf_case9241_pegase.m (elapsed 361s)
+[ Info: Results saved to results/shin-compute-002_reference_OPF.csv (16 rows)

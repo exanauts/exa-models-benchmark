@@ -1,0 +1,2069 @@
+┌ Info: Running reference benchmarks (JuMP + AMPL)
+└   seconds = 0.2
+[ Info: LV JuMP: rosenrock/1000
+[ Info: LV JuMP: rosenrock/10000
+[ Info: LV JuMP: wood/1000
+[ Info: LV JuMP: wood/10000
+[ Info: LV JuMP: chained_powell/1000
+[ Info: LV JuMP: chained_powell/10000
+[ Info: LV JuMP: cragg_levy/1000
+[ Info: LV JuMP: cragg_levy/10000
+[ Info: LV JuMP: broyden_tridiagonal/1000
+[ Info: LV JuMP: broyden_tridiagonal/10000
+[ Info: LV JuMP: broyden_banded/1000
+┌ Warning: Failed: LV JuMP broyden_banded/1000
+│   exception =
+│    BoundsError: attempt to access 1000-element Vector{VariableRef} at index [1001]
+│    Stacktrace:
+│      [1] throw_boundserror(A::Vector{VariableRef}, I::Tuple{Int64})
+│        @ Base ./essentials.jl:15
+│      [2] getindex
+│        @ ./essentials.jl:919 [inlined]
+│      [3] broyden_banded_kconstraint
+│        @ ~/.julia/packages/LuksanVlcekBenchmark/r1h8z/src/broyden_banded.jl:7 [inlined]
+│      [4] macro expansion
+│        @ ~/.julia/packages/MutableArithmetics/xwKH0/src/rewrite.jl:384 [inlined]
+│      [5] macro expansion
+│        @ ~/.julia/packages/JuMP/EHXNP/src/macros.jl:264 [inlined]
+│      [6] macro expansion
+│        @ ~/.julia/packages/JuMP/EHXNP/src/macros/@constraint.jl:171 [inlined]
+│      [7] (::LuksanVlcekBenchmarkJuMP.var"#42#43"{Vector{VariableRef}, Model})(k::Int64)
+│        @ LuksanVlcekBenchmarkJuMP ~/.julia/packages/JuMP/EHXNP/src/Containers/macro.jl:559
+│      [8] #container##0
+│        @ ~/.julia/packages/JuMP/EHXNP/src/Containers/container.jl:85 [inlined]
+│      [9] iterate
+│        @ ./generator.jl:48 [inlined]
+│     [10] collect_to!
+│        @ ./array.jl:848 [inlined]
+│     [11] collect_to_with_first!
+│        @ ./array.jl:826 [inlined]
+│     [12] collect(itr::Base.Generator{JuMP.Containers.VectorizedProductIterator{Tuple{Base.OneTo{Int64}}}, JuMP.Containers.var"#container##0#container##1"{LuksanVlcekBenchmarkJuMP.var"#42#43"{Vector{VariableRef}, Model}}})
+│        @ Base ./array.jl:800
+│     [13] map
+│        @ ./abstractarray.jl:3402 [inlined]
+│     [14] container
+│        @ ~/.julia/packages/JuMP/EHXNP/src/Containers/container.jl:85 [inlined]
+│     [15] container
+│        @ ~/.julia/packages/JuMP/EHXNP/src/Containers/container.jl:71 [inlined]
+│     [16] container
+│        @ ~/.julia/packages/JuMP/EHXNP/src/Containers/container.jl:75 [inlined]
+│     [17] macro expansion
+│        @ ~/.julia/packages/JuMP/EHXNP/src/macros.jl:402 [inlined]
+│     [18] #broyden_banded_model#33
+│        @ ~/.julia/packages/LuksanVlcekBenchmark/r1h8z/ext/LuksanVlcekBenchmarkJuMP/broyden_banded.jl:10 [inlined]
+│     [19] broyden_banded_model
+│        @ ~/.julia/packages/LuksanVlcekBenchmark/r1h8z/ext/LuksanVlcekBenchmarkJuMP/broyden_banded.jl:1 [inlined]
+│     [20] build_jump_lv(model_func::typeof(broyden_banded_model), args::Int64)
+│        @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:127
+│     [21] run_reference(; seconds::Float64)
+│        @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:397
+│     [22] run_reference
+│        @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [23] main()
+│        @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [24] top-level scope
+│        @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [25] include(mod::Module, _path::String)
+│        @ Base ./Base.jl:306
+│     [26] exec_options(opts::Base.JLOptions)
+│        @ Base ./client.jl:317
+│     [27] _start()
+│        @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:402
+[ Info: LV JuMP: broyden_banded/10000
+┌ Warning: Failed: LV JuMP broyden_banded/10000
+│   exception =
+│    BoundsError: attempt to access 10000-element Vector{VariableRef} at index [10001]
+│    Stacktrace:
+│      [1] throw_boundserror(A::Vector{VariableRef}, I::Tuple{Int64})
+│        @ Base ./essentials.jl:15
+│      [2] getindex
+│        @ ./essentials.jl:919 [inlined]
+│      [3] broyden_banded_kconstraint
+│        @ ~/.julia/packages/LuksanVlcekBenchmark/r1h8z/src/broyden_banded.jl:7 [inlined]
+│      [4] macro expansion
+│        @ ~/.julia/packages/MutableArithmetics/xwKH0/src/rewrite.jl:384 [inlined]
+│      [5] macro expansion
+│        @ ~/.julia/packages/JuMP/EHXNP/src/macros.jl:264 [inlined]
+│      [6] macro expansion
+│        @ ~/.julia/packages/JuMP/EHXNP/src/macros/@constraint.jl:171 [inlined]
+│      [7] (::LuksanVlcekBenchmarkJuMP.var"#42#43"{Vector{VariableRef}, Model})(k::Int64)
+│        @ LuksanVlcekBenchmarkJuMP ~/.julia/packages/JuMP/EHXNP/src/Containers/macro.jl:559
+│      [8] #container##0
+│        @ ~/.julia/packages/JuMP/EHXNP/src/Containers/container.jl:85 [inlined]
+│      [9] iterate
+│        @ ./generator.jl:48 [inlined]
+│     [10] collect_to!
+│        @ ./array.jl:848 [inlined]
+│     [11] collect_to_with_first!
+│        @ ./array.jl:826 [inlined]
+│     [12] collect(itr::Base.Generator{JuMP.Containers.VectorizedProductIterator{Tuple{Base.OneTo{Int64}}}, JuMP.Containers.var"#container##0#container##1"{LuksanVlcekBenchmarkJuMP.var"#42#43"{Vector{VariableRef}, Model}}})
+│        @ Base ./array.jl:800
+│     [13] map
+│        @ ./abstractarray.jl:3402 [inlined]
+│     [14] container
+│        @ ~/.julia/packages/JuMP/EHXNP/src/Containers/container.jl:85 [inlined]
+│     [15] container
+│        @ ~/.julia/packages/JuMP/EHXNP/src/Containers/container.jl:71 [inlined]
+│     [16] container
+│        @ ~/.julia/packages/JuMP/EHXNP/src/Containers/container.jl:75 [inlined]
+│     [17] macro expansion
+│        @ ~/.julia/packages/JuMP/EHXNP/src/macros.jl:402 [inlined]
+│     [18] #broyden_banded_model#33
+│        @ ~/.julia/packages/LuksanVlcekBenchmark/r1h8z/ext/LuksanVlcekBenchmarkJuMP/broyden_banded.jl:10 [inlined]
+│     [19] broyden_banded_model
+│        @ ~/.julia/packages/LuksanVlcekBenchmark/r1h8z/ext/LuksanVlcekBenchmarkJuMP/broyden_banded.jl:1 [inlined]
+│     [20] build_jump_lv(model_func::typeof(broyden_banded_model), args::Int64)
+│        @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:127
+│     [21] run_reference(; seconds::Float64)
+│        @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:397
+│     [22] run_reference
+│        @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [23] main()
+│        @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [24] top-level scope
+│        @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [25] include(mod::Module, _path::String)
+│        @ Base ./Base.jl:306
+│     [26] exec_options(opts::Base.JLOptions)
+│        @ Base ./client.jl:317
+│     [27] _start()
+│        @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:402
+[ Info: LV JuMP: trigo_tridiagonal/1000
+[ Info: LV JuMP: trigo_tridiagonal/10000
+[ Info: LV JuMP: augmented_lagrangian/1000
+[ Info: LV JuMP: augmented_lagrangian/10000
+[ Info: LV JuMP: modified_brown/1000
+[ Info: LV JuMP: modified_brown/10000
+[ Info: LV JuMP: generalized_brown/1000
+[ Info: LV JuMP: generalized_brown/10000
+[ Info: LV JuMP: chained_hs46/1000
+[ Info: LV JuMP: chained_hs46/10000
+[ Info: LV JuMP: chained_hs47/1000
+[ Info: LV JuMP: chained_hs47/10000
+[ Info: LV JuMP: chained_hs48/1000
+[ Info: LV JuMP: chained_hs48/10000
+[ Info: LV JuMP: chained_hs49/1000
+[ Info: LV JuMP: chained_hs49/10000
+[ Info: LV JuMP: chained_hs50/1000
+[ Info: LV JuMP: chained_hs50/10000
+[ Info: LV JuMP: chained_hs51/1000
+[ Info: LV JuMP: chained_hs51/10000
+[ Info: LV JuMP: chained_hs52/1000
+┌ Warning: /home/sushin/git/ExaModels.jl/src/ExaModels.jl/src is not an existing directory, Revise is not watching
+└ @ Revise /home/sushin/.julia/packages/Revise/Ga621/src/packagedef.jl:647
+┌ Warning: /home/sushin/git/ExaModels.jl/src/ExaModels.jl/ext is not an existing directory, Revise is not watching
+└ @ Revise /home/sushin/.julia/packages/Revise/Ga621/src/packagedef.jl:647
+[ Info: LV JuMP: chained_hs52/10000
+[ Info: LV JuMP: chained_hs53/1000
+[ Info: LV JuMP: chained_hs53/10000
+[ Info: LV AMPL: rosenrock/1000
+┌ Warning: Failed: LV AMPL rosenrock/1000
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#52#53"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(rosenrock_model), sizes::Vector{Int64}}, Int64, Tuple{Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:421
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:433
+[ Info: LV AMPL: rosenrock/10000
+┌ Warning: Failed: LV AMPL rosenrock/10000
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#52#53"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(rosenrock_model), sizes::Vector{Int64}}, Int64, Tuple{Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:421
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:433
+[ Info: LV AMPL: wood/1000
+┌ Warning: Failed: LV AMPL wood/1000
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#52#53"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(wood_model), sizes::Vector{Int64}}, Int64, Tuple{Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:421
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:433
+[ Info: LV AMPL: wood/10000
+┌ Warning: Failed: LV AMPL wood/10000
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#52#53"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(wood_model), sizes::Vector{Int64}}, Int64, Tuple{Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:421
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:433
+[ Info: LV AMPL: chained_powell/1000
+┌ Warning: Failed: LV AMPL chained_powell/1000
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#52#53"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(chained_powell_model), sizes::Vector{Int64}}, Int64, Tuple{Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:421
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:433
+[ Info: LV AMPL: chained_powell/10000
+┌ Warning: Failed: LV AMPL chained_powell/10000
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#52#53"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(chained_powell_model), sizes::Vector{Int64}}, Int64, Tuple{Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:421
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:433
+[ Info: LV AMPL: cragg_levy/1000
+┌ Warning: Failed: LV AMPL cragg_levy/1000
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#52#53"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(cragg_levy_model), sizes::Vector{Int64}}, Int64, Tuple{Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:421
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:433
+[ Info: LV AMPL: cragg_levy/10000
+┌ Warning: Failed: LV AMPL cragg_levy/10000
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#52#53"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(cragg_levy_model), sizes::Vector{Int64}}, Int64, Tuple{Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:421
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:433
+[ Info: LV AMPL: broyden_tridiagonal/1000
+┌ Warning: Failed: LV AMPL broyden_tridiagonal/1000
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#52#53"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(broyden_tridiagonal_model), sizes::Vector{Int64}}, Int64, Tuple{Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:421
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:433
+[ Info: LV AMPL: broyden_tridiagonal/10000
+┌ Warning: Failed: LV AMPL broyden_tridiagonal/10000
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#52#53"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(broyden_tridiagonal_model), sizes::Vector{Int64}}, Int64, Tuple{Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:421
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:433
+[ Info: LV AMPL: broyden_banded/1000
+┌ Warning: Failed: LV AMPL broyden_banded/1000
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#52#53"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(broyden_banded_model), sizes::Vector{Int64}}, Int64, Tuple{Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:421
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:433
+[ Info: LV AMPL: broyden_banded/10000
+┌ Warning: Failed: LV AMPL broyden_banded/10000
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#52#53"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(broyden_banded_model), sizes::Vector{Int64}}, Int64, Tuple{Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:421
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:433
+[ Info: LV AMPL: trigo_tridiagonal/1000
+┌ Warning: Failed: LV AMPL trigo_tridiagonal/1000
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#52#53"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(trigo_tridiagonal_model), sizes::Vector{Int64}}, Int64, Tuple{Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:421
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:433
+[ Info: LV AMPL: trigo_tridiagonal/10000
+┌ Warning: Failed: LV AMPL trigo_tridiagonal/10000
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#52#53"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(trigo_tridiagonal_model), sizes::Vector{Int64}}, Int64, Tuple{Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:421
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:433
+[ Info: LV AMPL: augmented_lagrangian/1000
+┌ Warning: Failed: LV AMPL augmented_lagrangian/1000
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#52#53"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(augmented_lagrangian_model), sizes::Vector{Int64}}, Int64, Tuple{Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:421
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:433
+[ Info: LV AMPL: augmented_lagrangian/10000
+┌ Warning: Failed: LV AMPL augmented_lagrangian/10000
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#52#53"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(augmented_lagrangian_model), sizes::Vector{Int64}}, Int64, Tuple{Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:421
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:433
+[ Info: LV AMPL: modified_brown/1000
+┌ Warning: Failed: LV AMPL modified_brown/1000
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#52#53"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(modified_brown_model), sizes::Vector{Int64}}, Int64, Tuple{Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:421
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:433
+[ Info: LV AMPL: modified_brown/10000
+┌ Warning: Failed: LV AMPL modified_brown/10000
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#52#53"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(modified_brown_model), sizes::Vector{Int64}}, Int64, Tuple{Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:421
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:433
+[ Info: LV AMPL: generalized_brown/1000
+┌ Warning: Failed: LV AMPL generalized_brown/1000
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#52#53"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(generalized_brown_model), sizes::Vector{Int64}}, Int64, Tuple{Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:421
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:433
+[ Info: LV AMPL: generalized_brown/10000
+┌ Warning: Failed: LV AMPL generalized_brown/10000
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#52#53"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(generalized_brown_model), sizes::Vector{Int64}}, Int64, Tuple{Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:421
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:433
+[ Info: LV AMPL: chained_hs46/1000
+┌ Warning: Failed: LV AMPL chained_hs46/1000
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#52#53"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(Chained_HS46_model), sizes::Vector{Int64}}, Int64, Tuple{Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:421
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:433
+[ Info: LV AMPL: chained_hs46/10000
+┌ Warning: Failed: LV AMPL chained_hs46/10000
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#52#53"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(Chained_HS46_model), sizes::Vector{Int64}}, Int64, Tuple{Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:421
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:433
+[ Info: LV AMPL: chained_hs47/1000
+┌ Warning: Failed: LV AMPL chained_hs47/1000
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#52#53"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(Chained_HS47_model), sizes::Vector{Int64}}, Int64, Tuple{Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:421
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:433
+[ Info: LV AMPL: chained_hs47/10000
+┌ Warning: Failed: LV AMPL chained_hs47/10000
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#52#53"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(Chained_HS47_model), sizes::Vector{Int64}}, Int64, Tuple{Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:421
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:433
+[ Info: LV AMPL: chained_hs48/1000
+┌ Warning: Failed: LV AMPL chained_hs48/1000
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#52#53"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(Chained_HS48_model), sizes::Vector{Int64}}, Int64, Tuple{Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:421
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:433
+[ Info: LV AMPL: chained_hs48/10000
+┌ Warning: Failed: LV AMPL chained_hs48/10000
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#52#53"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(Chained_HS48_model), sizes::Vector{Int64}}, Int64, Tuple{Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:421
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:433
+[ Info: LV AMPL: chained_hs49/1000
+┌ Warning: Failed: LV AMPL chained_hs49/1000
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#52#53"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(Chained_HS49_model), sizes::Vector{Int64}}, Int64, Tuple{Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:421
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:433
+[ Info: LV AMPL: chained_hs49/10000
+┌ Warning: Failed: LV AMPL chained_hs49/10000
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#52#53"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(Chained_HS49_model), sizes::Vector{Int64}}, Int64, Tuple{Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:421
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:433
+[ Info: LV AMPL: chained_hs50/1000
+┌ Warning: Failed: LV AMPL chained_hs50/1000
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#52#53"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(Chained_HS50_model), sizes::Vector{Int64}}, Int64, Tuple{Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:421
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:433
+[ Info: LV AMPL: chained_hs50/10000
+┌ Warning: Failed: LV AMPL chained_hs50/10000
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#52#53"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(Chained_HS50_model), sizes::Vector{Int64}}, Int64, Tuple{Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:421
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:433
+[ Info: LV AMPL: chained_hs51/1000
+┌ Warning: Failed: LV AMPL chained_hs51/1000
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#52#53"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(Chained_HS51_model), sizes::Vector{Int64}}, Int64, Tuple{Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:421
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:433
+[ Info: LV AMPL: chained_hs51/10000
+┌ Warning: Failed: LV AMPL chained_hs51/10000
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#52#53"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(Chained_HS51_model), sizes::Vector{Int64}}, Int64, Tuple{Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:421
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:433
+[ Info: LV AMPL: chained_hs52/1000
+┌ Warning: Failed: LV AMPL chained_hs52/1000
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#52#53"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(Chained_HS52_model), sizes::Vector{Int64}}, Int64, Tuple{Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:421
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:433
+[ Info: LV AMPL: chained_hs52/10000
+┌ Warning: Failed: LV AMPL chained_hs52/10000
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#52#53"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(Chained_HS52_model), sizes::Vector{Int64}}, Int64, Tuple{Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:421
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:433
+[ Info: LV AMPL: chained_hs53/1000
+┌ Warning: Failed: LV AMPL chained_hs53/1000
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#52#53"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(Chained_HS53_model), sizes::Vector{Int64}}, Int64, Tuple{Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:421
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:433
+[ Info: LV AMPL: chained_hs53/10000
+┌ Warning: Failed: LV AMPL chained_hs53/10000
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#52#53"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(Chained_HS53_model), sizes::Vector{Int64}}, Int64, Tuple{Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:421
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:433
+[ Info: COPS JuMP: bearing/(50, 50)
+[ Info: COPS JuMP: bearing/(100, 100)
+[ Info: COPS JuMP: camshape/3200
+[ Info: COPS JuMP: camshape/6400
+[ Info: COPS JuMP: catmix/1600
+[ Info: COPS JuMP: catmix/3200
+[ Info: COPS JuMP: chain/3200
+[ Info: COPS JuMP: chain/6400
+[ Info: COPS JuMP: channel/3200
+[ Info: COPS JuMP: channel/6400
+[ Info: COPS JuMP: elec/200
+[ Info: COPS JuMP: elec/400
+[ Info: COPS JuMP: gasoil/1600
+[ Info: COPS JuMP: gasoil/3200
+[ Info: COPS JuMP: glider/1600
+[ Info: COPS JuMP: glider/3200
+[ Info: COPS JuMP: marine/800
+[ Info: COPS JuMP: marine/1600
+[ Info: COPS JuMP: methanol/1600
+[ Info: COPS JuMP: methanol/3200
+[ Info: COPS JuMP: minsurf/(50, 50)
+[ Info: COPS JuMP: minsurf/(100, 100)
+[ Info: COPS JuMP: pinene/1600
+[ Info: COPS JuMP: pinene/3200
+[ Info: COPS JuMP: polygon/1600
+[ Info: COPS JuMP: polygon/3200
+[ Info: COPS JuMP: robot/800
+[ Info: COPS JuMP: robot/1600
+[ Info: COPS JuMP: rocket/6400
+[ Info: COPS JuMP: rocket/12800
+[ Info: COPS JuMP: steering/6400
+[ Info: COPS JuMP: steering/12800
+[ Info: COPS JuMP: torsion/(50, 50)
+[ Info: COPS JuMP: torsion/(100, 100)
+[ Info: COPS JuMP: dirichlet/20
+[ Info: COPS JuMP: dirichlet/40
+[ Info: COPS AMPL: bearing/(50, 50)
+┌ Warning: Failed: COPS AMPL bearing/(50, 50)
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#54#55"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(COPSBenchmark.bearing_model), sizes::Vector{Tuple{Int64, Int64}}}, Tuple{Int64, Int64}, Tuple{Int64, Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:472
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:484
+[ Info: COPS AMPL: bearing/(100, 100)
+┌ Warning: Failed: COPS AMPL bearing/(100, 100)
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#54#55"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(COPSBenchmark.bearing_model), sizes::Vector{Tuple{Int64, Int64}}}, Tuple{Int64, Int64}, Tuple{Int64, Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:472
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:484
+[ Info: COPS AMPL: camshape/3200
+┌ Warning: Failed: COPS AMPL camshape/3200
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#54#55"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(COPSBenchmark.camshape_model), sizes::Vector{Int64}}, Int64, Tuple{Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:472
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:484
+[ Info: COPS AMPL: camshape/6400
+┌ Warning: Failed: COPS AMPL camshape/6400
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#54#55"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(COPSBenchmark.camshape_model), sizes::Vector{Int64}}, Int64, Tuple{Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:472
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:484
+[ Info: COPS AMPL: catmix/1600
+┌ Warning: Failed: COPS AMPL catmix/1600
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#54#55"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(COPSBenchmark.catmix_model), sizes::Vector{Int64}}, Int64, Tuple{Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:472
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:484
+[ Info: COPS AMPL: catmix/3200
+┌ Warning: Failed: COPS AMPL catmix/3200
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#54#55"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(COPSBenchmark.catmix_model), sizes::Vector{Int64}}, Int64, Tuple{Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:472
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:484
+[ Info: COPS AMPL: chain/3200
+┌ Warning: Failed: COPS AMPL chain/3200
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#54#55"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(COPSBenchmark.chain_model), sizes::Vector{Int64}}, Int64, Tuple{Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:472
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:484
+[ Info: COPS AMPL: chain/6400
+┌ Warning: Failed: COPS AMPL chain/6400
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#54#55"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(COPSBenchmark.chain_model), sizes::Vector{Int64}}, Int64, Tuple{Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:472
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:484
+[ Info: COPS AMPL: channel/3200
+┌ Warning: Failed: COPS AMPL channel/3200
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#54#55"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(COPSBenchmark.channel_model), sizes::Vector{Int64}}, Int64, Tuple{Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:472
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:484
+[ Info: COPS AMPL: channel/6400
+┌ Warning: Failed: COPS AMPL channel/6400
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#54#55"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(COPSBenchmark.channel_model), sizes::Vector{Int64}}, Int64, Tuple{Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:472
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:484
+[ Info: COPS AMPL: elec/200
+┌ Warning: Failed: COPS AMPL elec/200
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#54#55"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(COPSBenchmark.elec_model), sizes::Vector{Int64}}, Int64, Tuple{Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:472
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:484
+[ Info: COPS AMPL: elec/400
+┌ Warning: Failed: COPS AMPL elec/400
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#54#55"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(COPSBenchmark.elec_model), sizes::Vector{Int64}}, Int64, Tuple{Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:472
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:484
+[ Info: COPS AMPL: gasoil/1600
+┌ Warning: Failed: COPS AMPL gasoil/1600
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#54#55"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(COPSBenchmark.gasoil_model), sizes::Vector{Int64}}, Int64, Tuple{Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:472
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:484
+[ Info: COPS AMPL: gasoil/3200
+┌ Warning: Failed: COPS AMPL gasoil/3200
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#54#55"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(COPSBenchmark.gasoil_model), sizes::Vector{Int64}}, Int64, Tuple{Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:472
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:484
+[ Info: COPS AMPL: glider/1600
+┌ Warning: Failed: COPS AMPL glider/1600
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#54#55"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(COPSBenchmark.glider_model), sizes::Vector{Int64}}, Int64, Tuple{Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:472
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:484
+[ Info: COPS AMPL: glider/3200
+┌ Warning: Failed: COPS AMPL glider/3200
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#54#55"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(COPSBenchmark.glider_model), sizes::Vector{Int64}}, Int64, Tuple{Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:472
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:484
+[ Info: COPS AMPL: marine/800
+┌ Warning: Failed: COPS AMPL marine/800
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#54#55"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(COPSBenchmark.marine_model), sizes::Vector{Int64}}, Int64, Tuple{Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:472
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:484
+[ Info: COPS AMPL: marine/1600
+┌ Warning: Failed: COPS AMPL marine/1600
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#54#55"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(COPSBenchmark.marine_model), sizes::Vector{Int64}}, Int64, Tuple{Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:472
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:484
+[ Info: COPS AMPL: methanol/1600
+┌ Warning: Failed: COPS AMPL methanol/1600
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#54#55"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(COPSBenchmark.methanol_model), sizes::Vector{Int64}}, Int64, Tuple{Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:472
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:484
+[ Info: COPS AMPL: methanol/3200
+┌ Warning: Failed: COPS AMPL methanol/3200
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#54#55"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(COPSBenchmark.methanol_model), sizes::Vector{Int64}}, Int64, Tuple{Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:472
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:484
+[ Info: COPS AMPL: minsurf/(50, 50)
+┌ Warning: Failed: COPS AMPL minsurf/(50, 50)
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#54#55"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(COPSBenchmark.minsurf_model), sizes::Vector{Tuple{Int64, Int64}}}, Tuple{Int64, Int64}, Tuple{Int64, Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:472
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:484
+[ Info: COPS AMPL: minsurf/(100, 100)
+┌ Warning: Failed: COPS AMPL minsurf/(100, 100)
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#54#55"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(COPSBenchmark.minsurf_model), sizes::Vector{Tuple{Int64, Int64}}}, Tuple{Int64, Int64}, Tuple{Int64, Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:472
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:484
+[ Info: COPS AMPL: pinene/1600
+┌ Warning: Failed: COPS AMPL pinene/1600
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#54#55"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(COPSBenchmark.pinene_model), sizes::Vector{Int64}}, Int64, Tuple{Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:472
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:484
+[ Info: COPS AMPL: pinene/3200
+┌ Warning: Failed: COPS AMPL pinene/3200
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#54#55"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(COPSBenchmark.pinene_model), sizes::Vector{Int64}}, Int64, Tuple{Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:472
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:484
+[ Info: COPS AMPL: polygon/1600
+┌ Warning: Failed: COPS AMPL polygon/1600
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#54#55"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(COPSBenchmark.polygon_model), sizes::Vector{Int64}}, Int64, Tuple{Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:472
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:484
+[ Info: COPS AMPL: polygon/3200
+┌ Warning: Failed: COPS AMPL polygon/3200
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#54#55"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(COPSBenchmark.polygon_model), sizes::Vector{Int64}}, Int64, Tuple{Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:472
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:484
+[ Info: COPS AMPL: robot/800
+┌ Warning: Failed: COPS AMPL robot/800
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#54#55"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(COPSBenchmark.robot_model), sizes::Vector{Int64}}, Int64, Tuple{Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:472
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:484
+[ Info: COPS AMPL: robot/1600
+┌ Warning: Failed: COPS AMPL robot/1600
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#54#55"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(COPSBenchmark.robot_model), sizes::Vector{Int64}}, Int64, Tuple{Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:472
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:484
+[ Info: COPS AMPL: rocket/6400
+┌ Warning: Failed: COPS AMPL rocket/6400
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#54#55"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(COPSBenchmark.rocket_model), sizes::Vector{Int64}}, Int64, Tuple{Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:472
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:484
+[ Info: COPS AMPL: rocket/12800
+┌ Warning: Failed: COPS AMPL rocket/12800
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#54#55"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(COPSBenchmark.rocket_model), sizes::Vector{Int64}}, Int64, Tuple{Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:472
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:484
+[ Info: COPS AMPL: steering/6400
+┌ Warning: Failed: COPS AMPL steering/6400
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#54#55"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(COPSBenchmark.steering_model), sizes::Vector{Int64}}, Int64, Tuple{Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:472
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:484
+[ Info: COPS AMPL: steering/12800
+┌ Warning: Failed: COPS AMPL steering/12800
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#54#55"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(COPSBenchmark.steering_model), sizes::Vector{Int64}}, Int64, Tuple{Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:472
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:484
+[ Info: COPS AMPL: torsion/(50, 50)
+┌ Warning: Failed: COPS AMPL torsion/(50, 50)
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#54#55"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(COPSBenchmark.torsion_model), sizes::Vector{Tuple{Int64, Int64}}}, Tuple{Int64, Int64}, Tuple{Int64, Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:472
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:484
+[ Info: COPS AMPL: torsion/(100, 100)
+┌ Warning: Failed: COPS AMPL torsion/(100, 100)
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#54#55"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(COPSBenchmark.torsion_model), sizes::Vector{Tuple{Int64, Int64}}}, Tuple{Int64, Int64}, Tuple{Int64, Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:472
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:484
+[ Info: COPS AMPL: dirichlet/20
+┌ Warning: Failed: COPS AMPL dirichlet/20
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#54#55"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(COPSBenchmark.dirichlet_model), sizes::Vector{Int64}}, Int64, Tuple{Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:472
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:484
+[ Info: COPS AMPL: dirichlet/40
+┌ Warning: Failed: COPS AMPL dirichlet/40
+│   exception =
+│    MethodError: no method matching with_timeout(::var"#54#55"{Float64, DataFrame, @NamedTuple{name::String, model::typeof(COPSBenchmark.dirichlet_model), sizes::Vector{Int64}}, Int64, Tuple{Int64}}, ::Float64)
+│    The function `with_timeout` exists, but no method is defined for this combination of argument types.
+│    
+│    Closest candidates are:
+│      with_timeout(!Matched::Real, ::Any)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:189
+│    
+│    Stacktrace:
+│     [1] run_reference(; seconds::Float64)
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:472
+│     [2] run_reference
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:386 [inlined]
+│     [3] main()
+│       @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:546
+│     [4] top-level scope
+│       @ /tmp/exa-wf-test/benchmark/benchmark.jl:561
+│     [5] include(mod::Module, _path::String)
+│       @ Base ./Base.jl:306
+│     [6] exec_options(opts::Base.JLOptions)
+│       @ Base ./client.jl:317
+│     [7] _start()
+│       @ Base ./client.jl:550
+└ @ Main /tmp/exa-wf-test/benchmark/benchmark.jl:484
+[ Info: Results saved to results/shin-compute-002_reference.csv (70 rows)
