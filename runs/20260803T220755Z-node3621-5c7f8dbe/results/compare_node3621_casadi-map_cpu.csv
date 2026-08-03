@@ -1,0 +1,6 @@
+framework,device,n,threads,tobj_ms,tcons_ms,tgrad_ms,tjac_ms,thess_ms,variant,cpu_wall_ratio,hostname,commit
+casadi-map,cpu,20,1,0.0021599698811769485,0.002569984644651413,0.0022300519049167633,0.0031099189072847366,0.004469882696866989,"obj=map/jit,cons=map/jit,grad=map/jit,jac=map/codegen,hess=map/jit",0.97,node3621,69525a4
+casadi-map,cpu,200,1,0.003800028935074806,0.007521128281950951,0.0034498516470193863,0.012420117855072021,0.023429980501532555,"obj=map/codegen,cons=map/codegen,grad=map/jit,jac=map/codegen,hess=map/jit",0.99,node3621,69525a4
+casadi-map,cpu,2000,1,0.019109807908535004,0.055530108511447906,0.013939803466200829,0.10442105121910572,0.2194021362811327,"obj=map/codegen,cons=map/codegen,grad=map/jit,jac=map/jit,hess=map/jit",1.0,node3621,69525a4
+casadi-map,cpu,20000,1,0.17770100384950638,0.540123088285327,0.12774113565683365,1.0442661587148905,2.2104440722614527,"obj=map/codegen,cons=map/codegen,grad=map/jit,jac=map/jit,hess=map/codegen",1.0,node3621,69525a4
+casadi-map,cpu,200000,1,1.7241910099983215,5.380152026191354,1.187737099826336,15.639532823115587,40.58158118277788,"obj=map/codegen,cons=map/codegen,grad=map/jit,jac=map/codegen,hess=map/codegen",1.0,node3621,69525a4
