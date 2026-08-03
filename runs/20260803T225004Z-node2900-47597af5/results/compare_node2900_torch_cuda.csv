@@ -1,0 +1,6 @@
+framework,device,n,threads,tobj_ms,tcons_ms,tgrad_ms,tjac_ms,thess_ms,variant,cpu_wall_ratio,hostname,commit
+torch,cuda,20,1,0.018796883523464203,0.032446812838315964,0.04016188904643059,0.06707897409796715,0.27788663282990456,"obj=plain/plain,cons=plain/plain,grad=plain/plain,jac=vmap/plain,hess=vmap/plain",0.99,node2900,d33b6b7
+torch,cuda,200,1,0.019895844161510468,0.03441190347075462,0.04282500594854355,0.07219566032290459,0.31097792088985443,"obj=plain/plain,cons=plain/plain,grad=plain/plain,jac=vmap/plain,hess=vmap/plain",0.99,node2900,d33b6b7
+torch,cuda,2000,1,0.02114800736308098,0.039153266698122025,0.046907924115657806,0.08427491411566734,0.34939683973789215,"obj=plain/plain,cons=plain/plain,grad=plain/plain,jac=vmap/plain,hess=vmap/plain",0.99,node2900,d33b6b7
+torch,cuda,20000,1,0.022666994482278824,0.03767805173993111,0.047907233238220215,0.08021807298064232,0.3531430847942829,"obj=plain/plain,cons=plain/plain,grad=plain/plain,jac=vmap/plain,hess=vmap/plain",0.99,node2900,d33b6b7
+torch,cuda,200000,1,0.02891477197408676,0.04466203972697258,0.06270315498113632,0.1011919230222702,0.6584557704627514,"obj=plain/plain,cons=plain/plain,grad=plain/plain,jac=vmap/plain,hess=vmap/plain",1.0,node2900,d33b6b7
