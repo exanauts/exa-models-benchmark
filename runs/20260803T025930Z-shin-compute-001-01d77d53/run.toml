@@ -1,0 +1,34 @@
+run_id = "20260803T025930Z-shin-compute-001-01d77d53"
+timestamp_utc = "20260803T025930Z"
+hostname = "shin-compute-001"
+uname = "Linux shin-compute-001 6.8.0-136-generic #136-Ubuntu SMP PREEMPT_DYNAMIC Wed Jul  1 21:53:05 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux"
+julia = "julia version 1.12.0"
+code_commit = "c1eb9509493ba1c426db9c2a7fe59b2bf5990f47"
+files = [
+    "code/benchmark.jl",
+    "code/cases.jl",
+    "code/cases_minimal.jl",
+    "code/cases_quick.jl",
+    "code/compare/compare_ad.jl",
+    "code/compare/compare_ad.py",
+    "code/compare/requirements.in",
+    "code/compare/requirements.lock",
+    "code/example.sbatch",
+    "code/Makefile",
+    "code/Project.toml",
+    "code/save_results.sh",
+    "Manifest.toml",
+    "results/logs/shin-compute-001_CUDA_20260802T215527Z.log",
+    "results/logs/shin-compute-001_CUDA_20260802T221049Z.log",
+    "results/logs/shin-compute-001_CUDA_20260802T235416Z.log",
+    "results/logs/shin-compute-001_CUDA_dev0_shard1of2_20260803T012350Z.log",
+    "results/logs/shin-compute-001_CUDA_dev0_shard1of2_20260803T015444Z.log",
+    "results/logs/shin-compute-001_CUDA_dev1_shard2of2_20260803T012350Z.log",
+    "results/logs/shin-compute-001_CUDA_dev1_shard2of2_20260803T015444Z.log",
+    "results/shin-compute-001_CUDA-Quadro_GV100_fp64_dev0_shard1of2.csv",
+    "results/shin-compute-001_CUDA-Quadro_GV100_fp64_dev0_shard1of2_hw.toml",
+    "results/shin-compute-001_CUDA-Quadro_GV100_fp64_dev1_shard2of2.csv",
+    "results/shin-compute-001_CUDA-Quadro_GV100_fp64_dev1_shard2of2_hw.toml",
+    "results/shin-compute-001_CUDA-Quadro_GV100_fp64_OPF.csv",
+    "results/shin-compute-001_CUDA-Quadro_GV100_fp64_OPF_hw.toml",
+]
