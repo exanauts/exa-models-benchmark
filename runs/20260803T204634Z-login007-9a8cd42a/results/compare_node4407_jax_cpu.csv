@@ -1,0 +1,2 @@
+framework,device,n,threads,tgrad_ms,thess_ms,cpu_wall_ratio,hostname
+jax,cpu,200000,1,0.06221095100045204,1.093388069421053,1.0,node4407

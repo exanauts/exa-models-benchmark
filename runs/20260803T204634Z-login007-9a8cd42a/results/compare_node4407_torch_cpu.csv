@@ -1,0 +1,2 @@
+framework,device,n,threads,tgrad_ms,thess_ms,cpu_wall_ratio,hostname
+torch,cpu,200000,1,1.1703991331160069,7.898406125605106,1.0,node4407

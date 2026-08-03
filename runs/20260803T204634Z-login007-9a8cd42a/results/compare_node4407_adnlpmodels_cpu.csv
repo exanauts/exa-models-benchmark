@@ -1,0 +1,2 @@
+framework,device,n,threads,tgrad_ms,thess_ms,nnzh,hostname
+adnlpmodels,cpu,200000,1,45623.638082,376238.789283,399999,node4407
