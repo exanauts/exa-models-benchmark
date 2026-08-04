@@ -1,0 +1,2 @@
+problem,case,framework,device,n,threads,tobj_ms,tcons_ms,tgrad_ms,tjac_ms,thess_ms,variant,cpu_wall_ratio,hostname,commit
+opf,pglib_opf_case78484_epigrids,torch,cuda,674562,1,0.05498528480529785,0.535949133336544,0.32809702679514885,3.495016135275364,28.248478192836046,"obj=plain,cons=plain,grad=plain,jac=vmap,hess=vmap",0.99,node2900,13e4688
