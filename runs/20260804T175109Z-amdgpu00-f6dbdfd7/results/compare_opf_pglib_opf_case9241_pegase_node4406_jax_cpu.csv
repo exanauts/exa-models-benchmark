@@ -1,2 +1,0 @@
-problem,case,framework,device,n,threads,tobj_ms,tcons_ms,tgrad_ms,tjac_ms,thess_ms,variant,cpu_wall_ratio,hostname,commit
-opf,pglib_opf_case9241_pegase,jax,cpu,85568,1,0.018880004063248634,0.9801441337913275,0.04255981184542179,2.9194129165261984,7.024983176961541,"obj=plain/jit,cons=plain/jit,grad=plain/jit,jac=vmap/jit,hess=vmap/jit",1.0,node4406,0842524
