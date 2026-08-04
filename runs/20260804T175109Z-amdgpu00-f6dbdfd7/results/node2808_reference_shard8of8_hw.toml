@@ -1,0 +1,16 @@
+run_id = "20260804T175109Z-amdgpu00-f6dbdfd7"
+run_id = "20260803T161342Z-node2808-f7b6ba29"
+device = "CPU-reference"
+hostname = "node2808"
+precision = "fp64"
+
+[cpu]
+model = "Intel(R) Xeon(R) Gold 5420+"
+cores = "112"
+
+[system]
+julia = "1.12.0"
+threads = "1"
+ram = "251.1 GiB"
+os = "Linux x86_64-linux-gnu"
+examodels = "0.11.2"

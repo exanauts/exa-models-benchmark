@@ -1,0 +1,16 @@
+run_id = "20260804T175109Z-amdgpu00-f6dbdfd7"
+run_id = "20260803T191456Z-node4405-3233d7f2"
+device = "CPU"
+hostname = "node4405"
+precision = "fp64"
+
+[cpu]
+model = "AMD EPYC 9474F 48-Core Processor"
+cores = "192"
+
+[system]
+julia = "1.12.0"
+threads = "1"
+ram = "376.9 GiB"
+os = "Linux x86_64-linux-gnu"
+examodels = "0.11.2"

@@ -1,0 +1,6 @@
+framework,device,n,threads,tobj_ms,tcons_ms,tgrad_ms,tjac_ms,thess_ms,variant,cpu_wall_ratio,hostname,commit
+torch,cpu,20,1,0.01722993329167366,0.03226008266210556,0.21737092174589634,0.4238118417561054,4.9140858463943005,"obj=plain/plain,cons=plain/plain,grad=plain/plain,jac=vmap/plain,hess=vmap/plain",0.99,node4406,d33b6b7
+torch,cpu,200,1,0.01771003007888794,0.03416999243199825,0.22103195078670979,0.4339730367064476,5.007115891203284,"obj=plain/plain,cons=plain/plain,grad=plain/plain,jac=vmap/plain,hess=vmap/plain",0.99,node4406,d33b6b7
+torch,cpu,2000,1,0.020120060071349144,0.0520399771630764,0.2344409003853798,0.4815529100596905,5.412908038124442,"obj=plain/plain,cons=plain/plain,grad=plain/plain,jac=vmap/plain,hess=vmap/plain",1.0,node4406,d33b6b7
+torch,cpu,20000,1,0.04358100704848766,0.22317096590995789,0.3333620261400938,0.8970939088612795,8.686212124302983,"obj=plain/plain,cons=plain/plain,grad=plain/plain,jac=vmap/plain,hess=vmap/plain",0.99,node4406,d33b6b7
+torch,cpu,200000,1,0.2898820675909519,1.976588973775506,1.4169272035360336,5.540096899494529,47.059226082637906,"obj=plain/plain,cons=plain/plain,grad=plain/plain,jac=vmap/plain,hess=vmap/plain",0.99,node4406,d33b6b7
