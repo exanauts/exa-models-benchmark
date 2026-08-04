@@ -1,0 +1,19 @@
+run_id = "20260804T161815Z-amdgpu00-46586875"
+device = "AMDGPU-AMD Radeon Graphics"
+commit = "1774d1d"
+hostname = "amdgpu00"
+precision = "fp64"
+
+[cpu]
+model = "AMD EPYC 9654 96-Core Processor"
+cores = "384"
+physical_cores = "192"
+
+[system]
+gpu_driver = "ROCm 7.0.51831"
+julia = "1.12.6"
+threads = "1"
+gpu_memory = "192.0 GiB"
+ram = "2266.6 GiB"
+os = "Linux x86_64-linux-gnu"
+examodels = "0.11.2"

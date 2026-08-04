@@ -1,0 +1,25 @@
+Jobid: 988918
+qsub -I -n 1 -t 120 -q gpu_b200
+Mon Aug 03 14:11:30 2026 +0000 (UTC) submitted with cwd set to: /home/mschanen/git/exa-models-paper/benchmark/slurm
+jobid 988918 submitted from terminal /dev/pts/3
+Mon Aug 03 14:11:53 2026 +0000 (UTC) 
+Mon Aug 03 14:11:53 2026 +0000 (UTC) Command: '/usr/bin/ssh' 'blackwell00' '/usr/libexec/cobalt/cobalt-launcher.py' '--nf' '/var/tmp/cobalt.988918' '--jobid' '988918' '--cwd' '/home/mschanen/git/exa-models-paper/benchmark/slurm' '--env' 'COBALT_JOBID=988918' '/bin/sleep' '7200'
+Mon Aug 03 14:11:53 2026 +0000 (UTC) 
+Mon Aug 03 14:11:53 2026 +0000 (UTC) Environment:
+Mon Aug 03 14:11:53 2026 +0000 (UTC) SHELL=/bin/zsh
+Mon Aug 03 14:11:53 2026 +0000 (UTC) COBALT_NODEFILE=/tmp/tmpfN6WmY
+Mon Aug 03 14:11:53 2026 +0000 (UTC) COBALT_PARTNAME=blackwell00
+Mon Aug 03 14:11:53 2026 +0000 (UTC) COBALT_JOBID=988918
+Mon Aug 03 14:11:53 2026 +0000 (UTC) COBALT_STARTTIME=1785766298
+Mon Aug 03 14:11:53 2026 +0000 (UTC) LOGNAME=mschanen
+Mon Aug 03 14:11:53 2026 +0000 (UTC) USER=mschanen
+Mon Aug 03 14:11:53 2026 +0000 (UTC) COBALT_ENDTIME=1785773498
+Mon Aug 03 14:11:53 2026 +0000 (UTC) COBALT_PARTSIZE=1
+Mon Aug 03 14:11:53 2026 +0000 (UTC) HOME=/home/mschanen
+Mon Aug 03 14:11:53 2026 +0000 (UTC) COBALT_JOBSIZE=1
+Mon Aug 03 14:11:53 2026 +0000 (UTC) 
+Mon Aug 03 14:11:53 2026 +0000 (UTC) Info: stdin received from /dev/null
+Mon Aug 03 14:11:53 2026 +0000 (UTC) Info: stdout sent to /home/mschanen/git/exa-models-paper/benchmark/slurm/988918.output
+Mon Aug 03 14:11:53 2026 +0000 (UTC) Info: stderr sent to /home/mschanen/git/exa-models-paper/benchmark/slurm/988918.error
+Mon Aug 03 14:11:53 2026 +0000 (UTC) 
+Mon Aug 03 14:38:34 2026 +0000 (UTC) Info: user delete requested with signal SIGTERM by user mschanen

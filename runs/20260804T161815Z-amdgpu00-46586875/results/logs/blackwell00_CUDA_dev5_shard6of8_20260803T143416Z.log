@@ -1,0 +1,186 @@
+[info | PowerModels]: Suppressing information and warning messages for the rest of this session.  Use the Memento package for more fine-grained control of logging.
+┌ Info: Running ExaModels benchmarks
+│   device = "CUDA-NVIDIA B200"
+│   T = Float64
+│   seconds = 2.0
+└   suites = nothing
+[ Info: [LV ExaModels 1/7] wood/200000 (elapsed 1s)
+┌ Warning: Failed: LV ExaModels wood/200000
+│   exception =
+│    GPU compilation of MethodInstance for (::GPUArrays.var"#gpu_map_kernel#gpu_map_kernel##0")(::KernelAbstractions.CompilerMetadata{KernelAbstractions.NDIteration.DynamicSize, KernelAbstractions.NDIteration.DynamicCheck, Nothing, CartesianIndices{1, Tuple{Base.OneTo{Int64}}}, KernelAbstractions.NDIteration.NDRange{1, KernelAbstractions.NDIteration.DynamicSize, KernelAbstractions.NDIteration.DynamicSize, CartesianIndices{1, Tuple{Base.OneTo{Int64}}}, CartesianIndices{1, Tuple{Base.OneTo{Int64}}}}}, ::CuDeviceVector{Float64, 1}, ::Base.Broadcast.Broadcasted{Base.Broadcast.DefaultArrayStyle{1}, Tuple{Base.OneTo{Int64}}, LuksanVlcekBenchmarkExaModels.var"#16#17"{Type{Float64}}, Tuple{Base.Broadcast.Extruded{UnitRange{Int64}, Tuple{Bool}, Tuple{Int64}}}}) failed
+│    KernelError: passing non-bitstype argument
+│    
+│    Argument 4 to your kernel function is of type Base.Broadcast.Broadcasted{Base.Broadcast.DefaultArrayStyle{1}, Tuple{Base.OneTo{Int64}}, LuksanVlcekBenchmarkExaModels.var"#16#17"{Type{Float64}}, Tuple{Base.Broadcast.Extruded{UnitRange{Int64}, Tuple{Bool}, Tuple{Int64}}}}, which is not a bitstype:
+│      .f is of type LuksanVlcekBenchmarkExaModels.var"#16#17"{Type{Float64}} which is not isbits.
+│        .T is of type Type{Float64} which is not isbits.
+│    
+│    
+│    Only bitstypes, which are "plain data" types that are immutable
+│    and contain no references to other values, can be used in GPU kernels.
+│    For more information, see the `Base.isbitstype` function.
+│    
+│    Stacktrace:
+│      [1] check_invocation(job::GPUCompiler.CompilerJob)
+│        @ GPUCompiler ~/.julia/packages/GPUCompiler/BSi1T/src/validation.jl:108
+│      [2] compile_unhooked(output::Symbol, job::GPUCompiler.CompilerJob; kwargs::@Kwargs{})
+│        @ GPUCompiler ~/.julia/packages/GPUCompiler/BSi1T/src/driver.jl:87
+│      [3] compile_unhooked
+│        @ ~/.julia/packages/GPUCompiler/BSi1T/src/driver.jl:80 [inlined]
+│      [4] #compile#123
+│        @ ~/.julia/packages/GPUCompiler/BSi1T/src/driver.jl:67 [inlined]
+│      [5] compile(target::Symbol, job::GPUCompiler.CompilerJob)
+│        @ GPUCompiler ~/.julia/packages/GPUCompiler/BSi1T/src/driver.jl:55
+│      [6] #invoke_frozen#595
+│        @ ~/.julia/packages/CUDACore/NlVPI/src/initialization.jl:30 [inlined]
+│      [7] invoke_frozen
+│        @ ~/.julia/packages/CUDACore/NlVPI/src/initialization.jl:26 [inlined]
+│      [8] #compile##0
+│        @ ~/.julia/packages/CUDACore/NlVPI/src/compiler/compilation.jl:337 [inlined]
+│      [9] JuliaContext(f::CUDACore.var"#compile##0#compile##1"{GPUCompiler.CompilerJob{GPUCompiler.PTXCompilerTarget, CUDACore.CUDACompilerParams}}; kwargs::@Kwargs{})
+│        @ GPUCompiler ~/.julia/packages/GPUCompiler/BSi1T/src/driver.jl:34
+│     [10] JuliaContext(f::Function)
+│        @ GPUCompiler ~/.julia/packages/GPUCompiler/BSi1T/src/driver.jl:25
+│     [11] compile(job::GPUCompiler.CompilerJob)
+│        @ CUDACore ~/.julia/packages/CUDACore/NlVPI/src/compiler/compilation.jl:336
+│     [12] actual_compilation(cache::Dict{Any, CuFunction}, src::Core.MethodInstance, world::UInt64, cfg::GPUCompiler.CompilerConfig{GPUCompiler.PTXCompilerTarget, CUDACore.CUDACompilerParams}, compiler::typeof(CUDACore.compile), linker::typeof(CUDACore.link))
+│        @ GPUCompiler ~/.julia/packages/GPUCompiler/BSi1T/src/execution.jl:245
+│     [13] cached_compilation(cache::Dict{Any, CuFunction}, src::Core.MethodInstance, cfg::GPUCompiler.CompilerConfig{GPUCompiler.PTXCompilerTarget, CUDACore.CUDACompilerParams}, compiler::Function, linker::Function)
+│        @ GPUCompiler ~/.julia/packages/GPUCompiler/BSi1T/src/execution.jl:159
+│     [14] macro expansion
+│        @ ~/.julia/packages/CUDACore/NlVPI/src/compiler/execution.jl:456 [inlined]
+│     [15] macro expansion
+│        @ ./lock.jl:376 [inlined]
+│     [16] cufunction(f::GPUArrays.var"#gpu_map_kernel#gpu_map_kernel##0", tt::Type{Tuple{KernelAbstractions.CompilerMetadata{KernelAbstractions.NDIteration.DynamicSize, KernelAbstractions.NDIteration.DynamicCheck, Nothing, CartesianIndices{1, Tuple{Base.OneTo{Int64}}}, KernelAbstractions.NDIteration.NDRange{1, KernelAbstractions.NDIteration.DynamicSize, KernelAbstractions.NDIteration.DynamicSize, CartesianIndices{1, Tuple{Base.OneTo{Int64}}}, CartesianIndices{1, Tuple{Base.OneTo{Int64}}}}}, CuDeviceVector{Float64, 1}, Base.Broadcast.Broadcasted{Base.Broadcast.DefaultArrayStyle{1}, Tuple{Base.OneTo{Int64}}, LuksanVlcekBenchmarkExaModels.var"#16#17"{Type{Float64}}, Tuple{Base.Broadcast.Extruded{UnitRange{Int64}, Tuple{Bool}, Tuple{Int64}}}}}}; kwargs::@Kwargs{always_inline::Bool, maxthreads::Nothing})
+│        @ CUDACore ~/.julia/packages/CUDACore/NlVPI/src/compiler/execution.jl:451
+│     [17] cufunction
+│        @ ~/.julia/packages/CUDACore/NlVPI/src/compiler/execution.jl:448 [inlined]
+│     [18] #kernel_compile#754
+│        @ ~/.julia/packages/CUDACore/NlVPI/src/compiler/execution.jl:60 [inlined]
+│     [19] macro expansion
+│        @ ~/.julia/packages/CUDACore/NlVPI/src/compiler/execution.jl:183 [inlined]
+│     [20] (::KernelAbstractions.Kernel{CUDABackend, KernelAbstractions.NDIteration.DynamicSize, KernelAbstractions.NDIteration.DynamicSize, GPUArrays.var"#gpu_map_kernel#gpu_map_kernel##0"})(::CuArray{Float64, 1, CUDACore.DeviceMemory}, ::Vararg{Any}; ndrange::Tuple{Int64}, workgroupsize::Nothing)
+│        @ CUDACore.CUDAKernels ~/.julia/packages/CUDACore/NlVPI/src/CUDAKernels.jl:125
+│     [21] Kernel
+│        @ ~/.julia/packages/CUDACore/NlVPI/src/CUDAKernels.jl:111 [inlined]
+│     [22] map!(f::Function, dest::CuArray{Float64, 1, CUDACore.DeviceMemory}, xs::UnitRange{Int64})
+│        @ GPUArrays ~/.julia/packages/GPUArrays/VNJ6B/src/host/broadcast.jl:131
+│     [23] append!
+│        @ ~/.julia/packages/ExaModels/g3VdC/src/nlp.jl:619 [inlined]
+│     [24] _add_var
+│        @ ~/.julia/packages/ExaModels/g3VdC/src/nlp.jl:704 [inlined]
+│     [25] #add_var#490
+│        @ ~/.julia/packages/ExaModels/g3VdC/src/nlp.jl:696 [inlined]
+│     [26] add_var
+│        @ ~/.julia/packages/ExaModels/g3VdC/src/nlp.jl:687 [inlined]
+│     [27] macro expansion
+│        @ ~/.julia/packages/ExaModels/g3VdC/src/nlp.jl:1757 [inlined]
+│     [28] wood_model(::LuksanVlcekBenchmark.ExaModelsBackend, N::Int64; T::Type{Float64}, backend::CUDABackend, prod::Bool, kwargs::@Kwargs{})
+│        @ LuksanVlcekBenchmarkExaModels ~/.julia/packages/LuksanVlcekBenchmark/hGpKv/ext/LuksanVlcekBenchmarkExaModels/wood.jl:3
+│     [29] build_examodels_lv(model_func::Function, args::Int64; backend::CUDABackend, T::Type)
+│        @ Main ~/git/exa-models-paper/benchmark/benchmark.jl:127
+│     [30] run_examodels(; backend::CUDABackend, seconds::Float64, suites::Nothing, T::Type)
+│        @ Main ~/git/exa-models-paper/benchmark/benchmark.jl:435
+│     [31] main()
+│        @ Main ~/git/exa-models-paper/benchmark/benchmark.jl:892
+│     [32] top-level scope
+│        @ ~/git/exa-models-paper/benchmark/benchmark.jl:907
+│     [33] include(mod::Module, _path::String)
+│        @ Base ./Base.jl:306
+│     [34] exec_options(opts::Base.JLOptions)
+│        @ Base ./client.jl:317
+│     [35] _start()
+│        @ Base ./client.jl:550
+└ @ Main ~/git/exa-models-paper/benchmark/benchmark.jl:440
+[ Info: [LV ExaModels 2/7] broyden_tridiagonal/2000 (elapsed 15s)
+[ Info: [LV ExaModels 3/7] augmented_lagrangian/20 (elapsed 57s)
+┌ Warning: Failed: LV ExaModels augmented_lagrangian/20
+│   exception =
+│    GPU compilation of MethodInstance for (::GPUArrays.var"#gpu_map_kernel#gpu_map_kernel##0")(::KernelAbstractions.CompilerMetadata{KernelAbstractions.NDIteration.DynamicSize, KernelAbstractions.NDIteration.DynamicCheck, Nothing, CartesianIndices{1, Tuple{Base.OneTo{Int64}}}, KernelAbstractions.NDIteration.NDRange{1, KernelAbstractions.NDIteration.DynamicSize, KernelAbstractions.NDIteration.DynamicSize, CartesianIndices{1, Tuple{Base.OneTo{Int64}}}, CartesianIndices{1, Tuple{Base.OneTo{Int64}}}}}, ::CuDeviceVector{Float64, 1}, ::Base.Broadcast.Broadcasted{Base.Broadcast.DefaultArrayStyle{1}, Tuple{Base.OneTo{Int64}}, LuksanVlcekBenchmarkExaModels.var"#66#67"{Type{Float64}}, Tuple{Base.Broadcast.Extruded{UnitRange{Int64}, Tuple{Bool}, Tuple{Int64}}}}) failed
+│    KernelError: passing non-bitstype argument
+│    
+│    Argument 4 to your kernel function is of type Base.Broadcast.Broadcasted{Base.Broadcast.DefaultArrayStyle{1}, Tuple{Base.OneTo{Int64}}, LuksanVlcekBenchmarkExaModels.var"#66#67"{Type{Float64}}, Tuple{Base.Broadcast.Extruded{UnitRange{Int64}, Tuple{Bool}, Tuple{Int64}}}}, which is not a bitstype:
+│      .f is of type LuksanVlcekBenchmarkExaModels.var"#66#67"{Type{Float64}} which is not isbits.
+│        .T is of type Type{Float64} which is not isbits.
+│    
+│    
+│    Only bitstypes, which are "plain data" types that are immutable
+│    and contain no references to other values, can be used in GPU kernels.
+│    For more information, see the `Base.isbitstype` function.
+│    
+│    Stacktrace:
+│      [1] check_invocation(job::GPUCompiler.CompilerJob)
+│        @ GPUCompiler ~/.julia/packages/GPUCompiler/BSi1T/src/validation.jl:108
+│      [2] compile_unhooked(output::Symbol, job::GPUCompiler.CompilerJob; kwargs::@Kwargs{})
+│        @ GPUCompiler ~/.julia/packages/GPUCompiler/BSi1T/src/driver.jl:87
+│      [3] compile_unhooked
+│        @ ~/.julia/packages/GPUCompiler/BSi1T/src/driver.jl:80 [inlined]
+│      [4] #compile#123
+│        @ ~/.julia/packages/GPUCompiler/BSi1T/src/driver.jl:67 [inlined]
+│      [5] compile(target::Symbol, job::GPUCompiler.CompilerJob)
+│        @ GPUCompiler ~/.julia/packages/GPUCompiler/BSi1T/src/driver.jl:55
+│      [6] #invoke_frozen#595
+│        @ ~/.julia/packages/CUDACore/NlVPI/src/initialization.jl:30 [inlined]
+│      [7] invoke_frozen
+│        @ ~/.julia/packages/CUDACore/NlVPI/src/initialization.jl:26 [inlined]
+│      [8] #compile##0
+│        @ ~/.julia/packages/CUDACore/NlVPI/src/compiler/compilation.jl:337 [inlined]
+│      [9] JuliaContext(f::CUDACore.var"#compile##0#compile##1"{GPUCompiler.CompilerJob{GPUCompiler.PTXCompilerTarget, CUDACore.CUDACompilerParams}}; kwargs::@Kwargs{})
+│        @ GPUCompiler ~/.julia/packages/GPUCompiler/BSi1T/src/driver.jl:34
+│     [10] JuliaContext(f::Function)
+│        @ GPUCompiler ~/.julia/packages/GPUCompiler/BSi1T/src/driver.jl:25
+│     [11] compile(job::GPUCompiler.CompilerJob)
+│        @ CUDACore ~/.julia/packages/CUDACore/NlVPI/src/compiler/compilation.jl:336
+│     [12] actual_compilation(cache::Dict{Any, CuFunction}, src::Core.MethodInstance, world::UInt64, cfg::GPUCompiler.CompilerConfig{GPUCompiler.PTXCompilerTarget, CUDACore.CUDACompilerParams}, compiler::typeof(CUDACore.compile), linker::typeof(CUDACore.link))
+│        @ GPUCompiler ~/.julia/packages/GPUCompiler/BSi1T/src/execution.jl:245
+│     [13] cached_compilation(cache::Dict{Any, CuFunction}, src::Core.MethodInstance, cfg::GPUCompiler.CompilerConfig{GPUCompiler.PTXCompilerTarget, CUDACore.CUDACompilerParams}, compiler::Function, linker::Function)
+│        @ GPUCompiler ~/.julia/packages/GPUCompiler/BSi1T/src/execution.jl:159
+│     [14] macro expansion
+│        @ ~/.julia/packages/CUDACore/NlVPI/src/compiler/execution.jl:456 [inlined]
+│     [15] macro expansion
+│        @ ./lock.jl:376 [inlined]
+│     [16] cufunction(f::GPUArrays.var"#gpu_map_kernel#gpu_map_kernel##0", tt::Type{Tuple{KernelAbstractions.CompilerMetadata{KernelAbstractions.NDIteration.DynamicSize, KernelAbstractions.NDIteration.DynamicCheck, Nothing, CartesianIndices{1, Tuple{Base.OneTo{Int64}}}, KernelAbstractions.NDIteration.NDRange{1, KernelAbstractions.NDIteration.DynamicSize, KernelAbstractions.NDIteration.DynamicSize, CartesianIndices{1, Tuple{Base.OneTo{Int64}}}, CartesianIndices{1, Tuple{Base.OneTo{Int64}}}}}, CuDeviceVector{Float64, 1}, Base.Broadcast.Broadcasted{Base.Broadcast.DefaultArrayStyle{1}, Tuple{Base.OneTo{Int64}}, LuksanVlcekBenchmarkExaModels.var"#66#67"{Type{Float64}}, Tuple{Base.Broadcast.Extruded{UnitRange{Int64}, Tuple{Bool}, Tuple{Int64}}}}}}; kwargs::@Kwargs{always_inline::Bool, maxthreads::Nothing})
+│        @ CUDACore ~/.julia/packages/CUDACore/NlVPI/src/compiler/execution.jl:451
+│     [17] cufunction
+│        @ ~/.julia/packages/CUDACore/NlVPI/src/compiler/execution.jl:448 [inlined]
+│     [18] #kernel_compile#754
+│        @ ~/.julia/packages/CUDACore/NlVPI/src/compiler/execution.jl:60 [inlined]
+│     [19] macro expansion
+│        @ ~/.julia/packages/CUDACore/NlVPI/src/compiler/execution.jl:183 [inlined]
+│     [20] (::KernelAbstractions.Kernel{CUDABackend, KernelAbstractions.NDIteration.DynamicSize, KernelAbstractions.NDIteration.DynamicSize, GPUArrays.var"#gpu_map_kernel#gpu_map_kernel##0"})(::CuArray{Float64, 1, CUDACore.DeviceMemory}, ::Vararg{Any}; ndrange::Tuple{Int64}, workgroupsize::Nothing)
+│        @ CUDACore.CUDAKernels ~/.julia/packages/CUDACore/NlVPI/src/CUDAKernels.jl:125
+│     [21] Kernel
+│        @ ~/.julia/packages/CUDACore/NlVPI/src/CUDAKernels.jl:111 [inlined]
+│     [22] map!(f::Function, dest::CuArray{Float64, 1, CUDACore.DeviceMemory}, xs::UnitRange{Int64})
+│        @ GPUArrays ~/.julia/packages/GPUArrays/VNJ6B/src/host/broadcast.jl:131
+│     [23] append!
+│        @ ~/.julia/packages/ExaModels/g3VdC/src/nlp.jl:619 [inlined]
+│     [24] _add_var
+│        @ ~/.julia/packages/ExaModels/g3VdC/src/nlp.jl:704 [inlined]
+│     [25] #add_var#490
+│        @ ~/.julia/packages/ExaModels/g3VdC/src/nlp.jl:696 [inlined]
+│     [26] add_var
+│        @ ~/.julia/packages/ExaModels/g3VdC/src/nlp.jl:687 [inlined]
+│     [27] macro expansion
+│        @ ~/.julia/packages/ExaModels/g3VdC/src/nlp.jl:1757 [inlined]
+│     [28] augmented_lagrangian_model(::LuksanVlcekBenchmark.ExaModelsBackend, N::Int64; T::Type{Float64}, backend::CUDABackend, prod::Bool, kwargs::@Kwargs{})
+│        @ LuksanVlcekBenchmarkExaModels ~/.julia/packages/LuksanVlcekBenchmark/hGpKv/ext/LuksanVlcekBenchmarkExaModels/augmented_lagrangian.jl:7
+│     [29] build_examodels_lv(model_func::Function, args::Int64; backend::CUDABackend, T::Type)
+│        @ Main ~/git/exa-models-paper/benchmark/benchmark.jl:127
+│     [30] run_examodels(; backend::CUDABackend, seconds::Float64, suites::Nothing, T::Type)
+│        @ Main ~/git/exa-models-paper/benchmark/benchmark.jl:435
+│     [31] main()
+│        @ Main ~/git/exa-models-paper/benchmark/benchmark.jl:892
+│     [32] top-level scope
+│        @ ~/git/exa-models-paper/benchmark/benchmark.jl:907
+│     [33] include(mod::Module, _path::String)
+│        @ Base ./Base.jl:306
+│     [34] exec_options(opts::Base.JLOptions)
+│        @ Base ./client.jl:317
+│     [35] _start()
+│        @ Base ./client.jl:550
+└ @ Main ~/git/exa-models-paper/benchmark/benchmark.jl:440
+[ Info: [LV ExaModels 4/7] generalized_brown/200000 (elapsed 60s)
+[ Info: [LV ExaModels 5/7] chained_hs48/2000 (elapsed 87s)
+[ Info: [LV ExaModels 6/7] chained_hs51/20 (elapsed 114s)
+[ Info: [LV ExaModels 7/7] chained_hs53/200000 (elapsed 144s)
+[ Info: [COPS ExaModels 1/7] camshape/170000 (elapsed 173s)

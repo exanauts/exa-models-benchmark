@@ -1,0 +1,11 @@
+[info | PowerModels]: Suppressing information and warning messages for the rest of this session.  Use the Memento package for more fine-grained control of logging.
+┌ Info: Running ExaModels benchmarks
+│   device = "CUDA-NVIDIA B200"
+│   T = Float64
+│   seconds = 2.0
+└   suites = nothing
+[ Info: [LV ExaModels 1/7] rosenrock/200000 (elapsed 1s)
+[ Info: [LV ExaModels 2/7] cragg_levy/2000 (elapsed 59s)
+[ Info: [LV ExaModels 3/7] trigo_tridiagonal/20 (elapsed 88s)
+[ Info: [LV ExaModels 4/7] modified_brown/200000 (elapsed 130s)
+[ Info: [LV ExaModels 5/7] chained_hs47/2000 (elapsed 178s)
