@@ -1,0 +1,4 @@
+problem,framework,device,n,threads,tobj_ms,tcons_ms,tgrad_ms,tjac_ms,thess_ms,variant,cpu_wall_ratio,hostname,commit
+elec,torch,cpu,50,1,0.04035094752907753,0.007869908586144447,0.35651098005473614,0.24758093059062958,9.999600937590003,"obj=plain/plain,cons=plain/plain,grad=plain/plain,jac=vmap/plain,hess=dense/plain",0.99,node4406,ecec181
+elec,torch,cpu,100,1,0.07989001460373402,0.007929978892207146,0.4389621317386627,0.25003100745379925,95.33586609177291,"obj=plain/plain,cons=plain/plain,grad=plain/plain,jac=vmap/plain,hess=dense/plain",1.0,node4406,ecec181
+elec,torch,cpu,200,1,0.22159097716212273,0.007920898497104645,0.806163065135479,0.25208108127117157,991.8034479487687,"obj=plain/plain,cons=plain/plain,grad=plain/plain,jac=vmap/plain,hess=dense/plain",1.0,node4406,ecec181

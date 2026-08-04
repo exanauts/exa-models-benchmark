@@ -1,0 +1,45 @@
+run_id = "20260804T005716Z-node4406-8d3bbcd2"
+timestamp_utc = "20260804T005716Z"
+hostname = "node4406"
+uname = "Linux node4406 4.18.0-553.134.1.el8_10.x86_64 #1 SMP Tue Jun 16 22:49:10 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux"
+julia = "julia version 1.12.0"
+code_commit = "ecec1819d04b2df00031c455619bd5e06cb3fad3"
+files = [
+    "code/benchmark.jl",
+    "code/cases.jl",
+    "code/cases_minimal.jl",
+    "code/cases_quick.jl",
+    "code/compare/compare_ad.jl",
+    "code/compare/compare_ad.py",
+    "code/compare/compare_cold.jl",
+    "code/compare/compare_cold.py",
+    "code/compare/export_opf.jl",
+    "code/compare/opf_common.py",
+    "code/compare/record_hw.jl",
+    "code/compare/requirements.in",
+    "code/compare/requirements.lock",
+    "code/Makefile",
+    "code/Project.toml",
+    "code/save_results.sh",
+    "code/slurm/jlse-amd.sbatch",
+    "code/slurm/jlse-compare-gpu.sbatch",
+    "code/slurm/jlse-intel.sbatch",
+    "code/slurm/jlse-nvidia-b200.sbatch",
+    "code/slurm/local-apple.sbatch",
+    "code/slurm/orcd-compare-cpu.sbatch",
+    "code/slurm/orcd-compare-elec.sbatch",
+    "code/slurm/orcd-compare-gpu.sbatch",
+    "code/slurm/orcd-cpu-mt.sbatch",
+    "code/slurm/orcd-cpu.sbatch",
+    "code/slurm/orcd-nvidia-a100.sbatch",
+    "code/slurm/orcd-nvidia-h100.sbatch",
+    "code/slurm/orcd-nvidia-l40s.sbatch",
+    "code/slurm/orcd-nvidia-pro6000.sbatch",
+    "code/slurm/orcd-reference.sbatch",
+    "Manifest.toml",
+    "results/compare_elec_node4406_casadi-mx_cpu.csv",
+    "results/compare_elec_node4406_examodels_cpu.csv",
+    "results/compare_elec_node4406_examodels_cpu-mt.csv",
+    "results/compare_elec_node4406_jax_cpu.csv",
+    "results/compare_elec_node4406_torch_cpu.csv",
+]

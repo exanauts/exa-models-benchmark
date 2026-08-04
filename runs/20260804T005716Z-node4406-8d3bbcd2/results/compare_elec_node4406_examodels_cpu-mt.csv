@@ -1,0 +1,4 @@
+problem,framework,device,n,threads,tobj_ms,tcons_ms,tgrad_ms,tjac_ms,thess_ms,variant,nnzj,nnzh,hostname,commit
+elec,examodels,cpu-mt,50,8,0.00874,0.00014000000000000001,0.031149999999999997,0.00021,0.032581,native,150,25875,node4406,ecec181
+elec,examodels,cpu-mt,100,8,0.01313,0.00016,0.10136,0.00027,0.07554999999999999,native,300,104250,node4406,ecec181
+elec,examodels,cpu-mt,200,8,0.035171,0.00016,0.408082,0.00042,0.24304099999999998,native,600,418500,node4406,ecec181
