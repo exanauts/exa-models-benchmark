@@ -1,7 +1,0 @@
-numpy
-# Plain `jax` installs a CPU-only jaxlib, which then silently falls back to
-# CPU on a GPU node while the CSV still says device=cuda. The cuda12 extra is
-# what makes a --device cuda run actually use the GPU.
-jax[cuda12]
-torch
-casadi
