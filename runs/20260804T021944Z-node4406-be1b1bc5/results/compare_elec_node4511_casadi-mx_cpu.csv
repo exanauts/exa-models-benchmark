@@ -1,0 +1,3 @@
+problem,framework,device,n,threads,tobj_ms,tcons_ms,tgrad_ms,tjac_ms,thess_ms,variant,cpu_wall_ratio,hostname,commit
+elec,casadi-mx,cpu,50,1,0.040889717638492584,0.0025299377739429474,0.062350183725357056,0.0026603229343891144,5.488450173288584,"obj=mx/interp,cons=mx/interp,grad=mx/codegen,jac=mx/jit,hess=mx/interp",1.0,node4511,abf587e
+elec,casadi-mx,cpu,100,1,0.15221117064356804,0.0027599744498729706,0.22120168432593346,0.0031297095119953156,40.63668800517917,"obj=mx/jit,cons=mx/interp,grad=mx/jit,jac=mx/jit,hess=mx/interp",1.0,node4511,abf587e

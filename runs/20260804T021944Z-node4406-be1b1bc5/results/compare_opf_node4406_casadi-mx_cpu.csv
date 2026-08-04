@@ -1,0 +1,4 @@
+problem,framework,device,n,threads,tobj_ms,tcons_ms,tgrad_ms,tjac_ms,thess_ms,variant,cpu_wall_ratio,hostname,commit
+opf,casadi-mx,cpu,200000,1,0.002489890903234482,0.014669960364699364,0.003220047801733017,0.07866998203098774,0.09805988520383835,"obj=mx/jit,cons=mx/jit,grad=mx/jit,jac=mx/jit,hess=mx/jit",0.99,node4406,e48ec72
+opf,casadi-mx,cpu,200000,1,0.006090151146054268,0.1432399731129408,0.014219898730516434,0.9479641448706388,1.3729250058531761,"obj=mx/jit,cons=mx/interp,grad=mx/jit,jac=mx/interp,hess=mx/jit",1.0,node4406,e48ec72
+opf,casadi-mx,cpu,200000,1,0.03984011709690094,1.1648049112409353,0.10673003271222115,22.4100430496037,34.8448739387095,"obj=mx/jit,cons=mx/interp,grad=mx/jit,jac=mx/interp,hess=mx/interp",1.0,node4406,e48ec72
