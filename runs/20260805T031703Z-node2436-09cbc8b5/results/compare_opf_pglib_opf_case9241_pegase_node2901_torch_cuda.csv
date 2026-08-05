@@ -1,0 +1,2 @@
+problem,case,framework,device,n,threads,tobj_ms,tcons_ms,tgrad_ms,tjac_ms,thess_ms,variant,cpu_wall_ratio,hostname,commit
+opf,pglib_opf_case9241_pegase,torch,cuda,85568,1,0.01774309203028679,0.16175396740436554,0.02998998388648033,0.3329627215862274,1.1738520115613937,"obj=plain/graph,cons=plain/graph,grad=plain/graph,jac=vmap/graph,hess=vmap/graph",1.0,node2901,49a12b4
