@@ -1,0 +1,2 @@
+problem,framework,device,n,case,threads,tobj_ms,tcons_ms,tgrad_ms,tjac_ms,thess_ms,variant,nnzj,nnzh,hostname,commit
+opf,examodels,cuda,1088,pglib_opf_case118_ieee,1,0.028533,0.139989,0.017496,0.11412499999999999,0.128455,native,5925,8474,node1702,e276519
