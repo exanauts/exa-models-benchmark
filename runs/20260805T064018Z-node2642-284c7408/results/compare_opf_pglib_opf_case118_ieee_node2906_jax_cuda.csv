@@ -1,0 +1,2 @@
+problem,case,framework,device,n,threads,tobj_ms,tcons_ms,tgrad_ms,tjac_ms,thess_ms,variant,cpu_wall_ratio,colors_jac,colors_hess,nnz_jac,nnz_hess,unique_jac,unique_hess,computed_jac,computed_hess,tbuild_s,hostname,commit
+opf,pglib_opf_case118_ieee,jax,cuda,1088,1,0.0381499994546175,0.03594404552131891,0.034217024222016335,0.04258996341377497,0.039161997847259045,"obj=plain/jit,cons=plain/jit,grad=plain/jit,jac=vmap/jit,hess=vmap/jit",1.0,8,20,5925,8474,5925,1868,19128,21760,,node2906,d8941c6
