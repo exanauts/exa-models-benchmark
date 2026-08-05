@@ -1,0 +1,17 @@
+run_id = "20260805T062036Z-node4412-e1fdece9"
+device = "CPU"
+commit = "d8941c6"
+hostname = "node4412"
+precision = "fp64"
+
+[cpu]
+model = "AMD EPYC 9474F 48-Core Processor"
+cores = "192"
+physical_cores = "96"
+
+[system]
+julia = "1.12.0"
+threads = "1"
+ram = "376.9 GiB"
+os = "Linux x86_64-linux-gnu"
+examodels = "0.11.2"
