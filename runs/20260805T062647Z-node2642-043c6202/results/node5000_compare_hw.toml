@@ -1,0 +1,19 @@
+run_id = "20260805T062647Z-node2642-043c6202"
+device = "CUDA-NVIDIA H200"
+commit = "d8941c6"
+hostname = "node5000"
+precision = "fp64"
+
+[cpu]
+model = "INTEL(R) XEON(R) PLATINUM 8580"
+cores = "240"
+physical_cores = "120"
+
+[system]
+gpu_driver = "driver 13.3.0, runtime 13.3.0"
+julia = "1.12.0"
+threads = "1"
+gpu_memory = "140.0 GiB"
+ram = "2014.8 GiB"
+os = "Linux x86_64-linux-gnu"
+examodels = "0.11.2"
