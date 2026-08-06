@@ -1,0 +1,26 @@
+run_id = "20260806T014510Z-node4115-a83abbbf"
+device = "CPU"
+commit = "4bef613"
+hostname = "node4115"
+precision = "fp64"
+
+[allocation]
+cpus_on_node = "128"
+mem = "32768 MB"
+partition = "ou_cheme"
+cpus = "8"
+cpus_total = "128"
+mem_total = "764295 MB"
+job_id = "19742523"
+
+[cpu]
+model = "AMD EPYC 9575F 64-Core Processor"
+cores = "256"
+physical_cores = "128"
+
+[system]
+julia = "1.12.0"
+threads = "1"
+ram = "754.4 GiB"
+os = "Linux x86_64-linux-gnu"
+examodels = "0.11.2"

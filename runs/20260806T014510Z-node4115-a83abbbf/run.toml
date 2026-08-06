@@ -1,0 +1,53 @@
+run_id = "20260806T014510Z-node4115-a83abbbf"
+timestamp_utc = "20260806T014510Z"
+hostname = "node4115"
+uname = "Linux node4115 4.18.0-553.83.1.el8_10.x86_64 #1 SMP Tue Nov 11 20:51:18 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux"
+julia = "julia version 1.12.0"
+code_commit = "4bef613a981c8b4aab709eea29a833736a23221a"
+slurm_job_id = "19742523"
+slurm_job_name = "exa-solve-cpu"
+files = [
+    "code/benchmark.jl",
+    "code/cases.jl",
+    "code/cases_minimal.jl",
+    "code/cases_quick.jl",
+    "code/compare/check_compare.py",
+    "code/compare/compare_ad.jl",
+    "code/compare/compare_ad.py",
+    "code/compare/compare_cold.jl",
+    "code/compare/compare_cold.py",
+    "code/compare/export_opf.jl",
+    "code/compare/opf_common.py",
+    "code/compare/record_hw.jl",
+    "code/compare/requirements.in",
+    "code/compare/requirements.lock",
+    "code/Makefile",
+    "code/Project.toml",
+    "code/save_results.sh",
+    "code/slurm/jlse-amd.sbatch",
+    "code/slurm/jlse-compare-gpu.sbatch",
+    "code/slurm/jlse-intel.sbatch",
+    "code/slurm/jlse-nvidia-b200.sbatch",
+    "code/slurm/local-apple.sbatch",
+    "code/slurm/orcd-compare-cpu.sbatch",
+    "code/slurm/orcd-compare-gpu.sbatch",
+    "code/slurm/orcd-compare-opf-gpu.sbatch",
+    "code/slurm/orcd-compare-opf.sbatch",
+    "code/slurm/orcd-cpu-mt.sbatch",
+    "code/slurm/orcd-cpu.sbatch",
+    "code/slurm/orcd-nvidia-a100.sbatch",
+    "code/slurm/orcd-nvidia-h100.sbatch",
+    "code/slurm/orcd-nvidia-l40s.sbatch",
+    "code/slurm/orcd-nvidia-pro6000.sbatch",
+    "code/slurm/orcd-reference.sbatch",
+    "code/slurm/orcd-solve-breakdown-cpu.sbatch",
+    "code/slurm/orcd-solve-breakdown-gpu.sbatch",
+    "Manifest.toml",
+    "results/node4115_compare_hw.toml",
+    "solve-results/breakdown_node4115_none_cpu-cpu.csv",
+    "solve-results/logs/node4110_breakdown_20260806T011622Z.log",
+    "solve-results/logs/node4115_breakdown_20260806T014247Z.log",
+    "solve-results/logs/node4409_breakdown_20260805T115335Z.log",
+    "solve-results/logs/node4412_breakdown_20260805T061722Z.log",
+    "solve-results/logs/node4513_breakdown_20260804T164558Z.log",
+]
