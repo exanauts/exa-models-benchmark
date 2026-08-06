@@ -1,0 +1,2 @@
+problem,case,framework,device,n,threads,tobj_ms,tcons_ms,tgrad_ms,tjac_ms,thess_ms,variant,cpu_wall_ratio,colors_jac,colors_hess,nnz_jac,nnz_hess,unique_jac,unique_hess,computed_jac,computed_hess,tbuild_s,hostname,commit
+opf,pglib_opf_case78484_epigrids,jax,cpu,674562,1,0.011426396667957306,6.217412650585175,0.12435205280780792,29.87956814467907,106.80535435676575,"obj=plain/jit,cons=plain/jit,grad=plain/jit,jac=vmap/jit,hess=vmap/jit",1.0,9,32,3950953,5708389,3950953,1178095,14010012,21585984,,node4115,4bef613

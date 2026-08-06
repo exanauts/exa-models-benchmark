@@ -1,0 +1,2 @@
+problem,framework,device,n,case,threads,tobj_ms,tcons_ms,tgrad_ms,tjac_ms,thess_ms,variant,nnzj,nnzh,hostname,commit
+opf,examodels,cpu,674562,pglib_opf_case78484_epigrids,1,0.006069,6.983649,0.044981999999999994,11.653338,17.205393,native,3950953,5708389,node4115,4bef613
