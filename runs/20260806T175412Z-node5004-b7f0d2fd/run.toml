@@ -1,0 +1,51 @@
+run_id = "20260806T175412Z-node5004-b7f0d2fd"
+timestamp_utc = "20260806T175412Z"
+hostname = "node5004"
+uname = "Linux node5004 4.18.0-553.83.1.el8_10.x86_64 #1 SMP Tue Nov 11 20:51:18 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux"
+julia = "julia version 1.12.0"
+code_commit = "dda87046e65283dc0b7f58acbdf8e129106f07aa"
+slurm_job_id = "19782636"
+slurm_job_name = "exa-compare-gpu"
+files = [
+    "code/benchmark.jl",
+    "code/cases.jl",
+    "code/cases_minimal.jl",
+    "code/cases_quick.jl",
+    "code/compare/check_compare.py",
+    "code/compare/compare_ad.jl",
+    "code/compare/compare_ad.py",
+    "code/compare/compare_cold.jl",
+    "code/compare/compare_cold.py",
+    "code/compare/export_opf.jl",
+    "code/compare/opf_common.py",
+    "code/compare/record_hw.jl",
+    "code/compare/requirements.in",
+    "code/compare/requirements.lock",
+    "code/Makefile",
+    "code/Project.toml",
+    "code/save_results.sh",
+    "code/slurm/jlse-amd.sbatch",
+    "code/slurm/jlse-compare-gpu.sbatch",
+    "code/slurm/jlse-intel.sbatch",
+    "code/slurm/jlse-nvidia-b200.sbatch",
+    "code/slurm/local-apple.sbatch",
+    "code/slurm/orcd-compare-cpu.sbatch",
+    "code/slurm/orcd-compare-gpu.sbatch",
+    "code/slurm/orcd-compare-opf-gpu.sbatch",
+    "code/slurm/orcd-compare-opf.sbatch",
+    "code/slurm/orcd-compile-scaling.sbatch",
+    "code/slurm/orcd-cpu-mt.sbatch",
+    "code/slurm/orcd-cpu.sbatch",
+    "code/slurm/orcd-nvidia-a100.sbatch",
+    "code/slurm/orcd-nvidia-h100.sbatch",
+    "code/slurm/orcd-nvidia-l40s.sbatch",
+    "code/slurm/orcd-nvidia-pro6000.sbatch",
+    "code/slurm/orcd-reference.sbatch",
+    "code/slurm/orcd-solve-breakdown-cpu.sbatch",
+    "code/slurm/orcd-solve-breakdown-gpu.sbatch",
+    "Manifest.toml",
+    "results/compare_lv_node5004_examodels_cuda.csv",
+    "results/compare_lv_node5004_jax_cuda.csv",
+    "results/compare_lv_node5004_torch_cuda.csv",
+    "results/node5004_compare_hw.toml",
+]
