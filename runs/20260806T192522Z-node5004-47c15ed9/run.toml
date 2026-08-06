@@ -1,0 +1,56 @@
+run_id = "20260806T192522Z-node5004-47c15ed9"
+timestamp_utc = "20260806T192522Z"
+hostname = "node5004"
+uname = "Linux node5004 4.18.0-553.83.1.el8_10.x86_64 #1 SMP Tue Nov 11 20:51:18 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux"
+julia = "julia version 1.12.0"
+code_commit = "35c53dc3094f1bbd815ec5075885117734fe57a0"
+slurm_job_id = "19786408"
+slurm_job_name = "exa-solve-gpu"
+files = [
+    "code/benchmark.jl",
+    "code/cases.jl",
+    "code/cases_minimal.jl",
+    "code/cases_quick.jl",
+    "code/compare/check_compare.py",
+    "code/compare/compare_ad.jl",
+    "code/compare/compare_ad.py",
+    "code/compare/compare_cold.jl",
+    "code/compare/compare_cold.py",
+    "code/compare/export_opf.jl",
+    "code/compare/lv_common.py",
+    "code/compare/opf_common.py",
+    "code/compare/record_hw.jl",
+    "code/compare/requirements.in",
+    "code/compare/requirements.lock",
+    "code/Makefile",
+    "code/Project.toml",
+    "code/save_results.sh",
+    "code/slurm/jlse-amd.sbatch",
+    "code/slurm/jlse-compare-gpu.sbatch",
+    "code/slurm/jlse-intel.sbatch",
+    "code/slurm/jlse-nvidia-b200.sbatch",
+    "code/slurm/local-apple.sbatch",
+    "code/slurm/orcd-compare-cpu.sbatch",
+    "code/slurm/orcd-compare-gpu.sbatch",
+    "code/slurm/orcd-compare-opf-gpu.sbatch",
+    "code/slurm/orcd-compare-opf.sbatch",
+    "code/slurm/orcd-compile-scaling.sbatch",
+    "code/slurm/orcd-cpu-mt.sbatch",
+    "code/slurm/orcd-cpu.sbatch",
+    "code/slurm/orcd-nvidia-a100.sbatch",
+    "code/slurm/orcd-nvidia-h100.sbatch",
+    "code/slurm/orcd-nvidia-l40s.sbatch",
+    "code/slurm/orcd-nvidia-pro6000.sbatch",
+    "code/slurm/orcd-reference.sbatch",
+    "code/slurm/orcd-solve-breakdown-cpu.sbatch",
+    "code/slurm/orcd-solve-breakdown-gpu.sbatch",
+    "Manifest.toml",
+    "results/node5004_compare_hw.toml",
+    "solve-results/breakdown_node5004_NVIDIA_RTX_PRO_6000_Blackwell_Server_Edition_all.csv",
+    "solve-results/logs/node5000_breakdown_20260804T173826Z.log",
+    "solve-results/logs/node5000_breakdown_20260805T062013Z.log",
+    "solve-results/logs/node5001_breakdown_20260805T120540Z.log",
+    "solve-results/logs/node5004_breakdown_20260806T014044Z.log",
+    "solve-results/logs/node5004_breakdown_20260806T025003Z.log",
+    "solve-results/logs/node5004_breakdown_20260806T191455Z.log",
+]
