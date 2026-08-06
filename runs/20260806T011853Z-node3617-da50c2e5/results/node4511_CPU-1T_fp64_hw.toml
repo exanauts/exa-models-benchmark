@@ -1,0 +1,17 @@
+run_id = "20260806T011853Z-node3617-da50c2e5"
+device = "CPU-1T"
+commit = "13e4688"
+hostname = "node4511"
+precision = "fp64"
+
+[cpu]
+model = "AMD EPYC 9474F 48-Core Processor"
+cores = "192"
+physical_cores = "96"
+
+[system]
+julia = "1.12.0"
+threads = "1"
+ram = "377.2 GiB"
+os = "Linux x86_64-linux-gnu"
+examodels = "0.11.2"
