@@ -1,0 +1,2 @@
+problem,case,framework,device,n,threads,tobj_ms,tcons_ms,tgrad_ms,tjac_ms,thess_ms,variant,cpu_wall_ratio,colors_jac,colors_hess,nnz_jac,nnz_hess,unique_jac,unique_hess,computed_jac,computed_hess,tbuild_s,hostname,commit
+opf,pglib_opf_case1354_pegase,jax,cpu,11192,1,0.01817988231778145,0.149131054058671,0.007529975846409798,0.2601321320980787,0.6351550109684467,"obj=plain/jit,cons=plain/jit,grad=plain/jit,jac=vmap/jit,hess=vmap/jit",1.0,8,28,62959,90572,62959,19126,201040,313376,,node4410,ec55dc3
