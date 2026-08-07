@@ -1,0 +1,26 @@
+run_id = "20260807T000716Z-node4406-6766be18"
+device = "CPU"
+commit = "ec55dc3"
+hostname = "node4406"
+precision = "fp64"
+
+[allocation]
+cpus_on_node = "96"
+mem = "98304 MB"
+partition = "mit_preemptable"
+cpus = "32"
+cpus_total = "96"
+mem_total = "378030 MB"
+job_id = "19796779"
+
+[cpu]
+model = "AMD EPYC 9474F 48-Core Processor"
+cores = "192"
+physical_cores = "96"
+
+[system]
+julia = "1.12.0"
+threads = "1"
+ram = "376.9 GiB"
+os = "Linux x86_64-linux-gnu"
+examodels = "0.11.2"
