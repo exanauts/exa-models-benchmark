@@ -1,0 +1,2 @@
+problem,case,framework,device,n,threads,tobj_ms,tcons_ms,tgrad_ms,tjac_ms,thess_ms,variant,cpu_wall_ratio,colors_jac,colors_hess,nnz_jac,nnz_hess,unique_jac,unique_hess,computed_jac,computed_hess,tbuild_s,hostname,commit
+lv,,torch,cpu,2000,1,0.011587981134653091,0.01717102713882923,0.017352867871522903,0.08939788676798344,0.0866129994392395,"obj=plain/inductor,cons=plain/inductor,grad=plain/inductor,jac=vmap/inductor,hess=vmap/inductor",0.99,3,3,5994,3999,5994,3999,5994,6000,,node5004,dda8704

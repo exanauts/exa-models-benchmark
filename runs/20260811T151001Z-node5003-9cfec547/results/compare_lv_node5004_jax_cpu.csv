@@ -1,0 +1,2 @@
+problem,case,framework,device,n,threads,tobj_ms,tcons_ms,tgrad_ms,tjac_ms,thess_ms,variant,cpu_wall_ratio,colors_jac,colors_hess,nnz_jac,nnz_hess,unique_jac,unique_hess,computed_jac,computed_hess,tbuild_s,hostname,commit
+lv,,jax,cpu,2000,1,0.009123003110289574,0.0371360220015049,0.010941876098513603,0.1621090341359377,0.18885498866438866,"obj=plain/aot,cons=plain/aot,grad=plain/aot,jac=vmap/jit,hess=vmap/jit",0.74,3,3,5994,3999,5994,3999,5994,6000,,node5004,dda8704
