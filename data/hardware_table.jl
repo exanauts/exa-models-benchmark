@@ -18,7 +18,8 @@ function resolve_gpu(name::AbstractString, vram::AbstractString)
         occursin("128", vram) && return "Instinct MI250X/MI300A"
         return name * " (unidentified AMD part)"
     end
-    return name
+    # vendor trademark noise
+    return strip(replace(name, "(R)" => "", "(TM)" => ""))
 end
 
 
@@ -206,7 +207,7 @@ function main()
         println(io, "  \\textbf{Platform} & \\textbf{CPU} & \\textbf{Cores} & \\textbf{RAM} & \\textbf{GPU} \\\\")
         println(io, "  \\midrule")
         # only platforms shown in the paper; a dropped platform keeps its label
-        SHOWN = Set(["C1", "C3", "N1", "N2", "N3", "N4", "N6", "A1", "M1"])
+        SHOWN = Set(["C1", "C3", "N1", "N2", "N3", "N4", "N6", "A1", "M1", "I1"])
         for cfg in sort(collect(filter(c -> get(label_of_config, c, "") in SHOWN, reps)), by = labelkey)
             hs = hosts_of_config[cfg]
             p = platforms[hs[1]]

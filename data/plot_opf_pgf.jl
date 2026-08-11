@@ -86,7 +86,7 @@ end
 const PLOT_REFERENCE = ("JuMP",)
 # exact for the CPU rows ("CPU" is a prefix of "CPU-4T"); prefix for accelerators
 const PLOT_DEVICES_EXACT = ("CPU", "CPU-4T")
-const PLOT_DEVICES_PREFIX = ("AMDGPU-AMD Radeon Graphics", "CUDA-NVIDIA B200", "Metal-Apple")
+const PLOT_DEVICES_PREFIX = ("AMDGPU-AMD Radeon Graphics", "CUDA-NVIDIA B200", "Metal-Apple", "oneAPI-Intel")
 
 """True when `d` is one of the devices the figures draw."""
 keep_device(d) = d in PLOT_DEVICES_EXACT ||

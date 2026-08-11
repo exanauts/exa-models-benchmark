@@ -138,9 +138,9 @@ function summary_rows(df, cpu_ref)
     gpus = filter(d -> !startswith(d, "CPU"), unique(String.(df.device)))
     best = best_gpu(df, cpu_ref)
     best === nothing || push!(out, ("dev:" * best, backend_label(best)))
-    # AMD row alongside the best card; skipped if absent or already the winner.
+    # AMD and Intel rows alongside the best card; skipped if absent or already the winner.
     for d in gpus
-        startswith(d, "AMDGPU") || continue
+        (startswith(d, "AMDGPU") || startswith(d, "oneAPI")) || continue
         d == best && continue
         score(d) > -Inf || continue
         push!(out, ("dev:" * d, backend_label(d)))
@@ -430,7 +430,7 @@ function write_gpu_facts(df, cpu_ref)
                 println(io, "\\newcommand{\\gs$(w)SpanLo}{$(round(minimum(nv); digits=1))}")
                 println(io, "\\newcommand{\\gs$(w)SpanHi}{$(round(maximum(nv); digits=1))}")
             end
-            for (pfx, word) in (("AMDGPU", "Amd"), ("Metal", "Apple"))
+            for (pfx, word) in (("AMDGPU", "Amd"), ("oneAPI", "Intel"), ("Metal", "Apple"))
                 v = [sp for (d, sp) in perdev if startswith(d, pfx)]
                 isempty(v) && continue
                 println(io, "% $suite Large-class Hessian speedup of the $(word) card")

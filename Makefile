@@ -369,9 +369,9 @@ save:                               ## archive results to the 'results' branch (
 RUNS ?=
 
 fetch-results:                      ## pull archived runs into data/results/ (RUNS='id1 id2' selects by uuid/substring; empty = all)
-	git -C $(REPO) fetch origin results
+	git -C $(BENCH) fetch origin results
 	@tmp=$$(mktemp -d); \
-	git -C $(REPO) worktree add --detach $$tmp origin/results >/dev/null 2>&1; \
+	git -C $(BENCH) worktree add --detach $$tmp origin/results >/dev/null 2>&1; \
 	stash=$(DATA)/_fetch_stash/$$(date -u +%Y%m%dT%H%M%SZ); mkdir -p $$stash; \
 	for f in $(DATA)/results/*.csv $(DATA)/results/*_hw.toml $(SOLVE)/results/*.csv; do \
 		[ -f "$$f" ] && mv "$$f" $$stash/ || true; \
@@ -395,7 +395,7 @@ fetch-results:                      ## pull archived runs into data/results/ (RU
 		done; \
 		echo "  + $$name"; n=$$((n+1)); \
 	done; \
-	git -C $(REPO) worktree remove --force $$tmp; \
+	git -C $(BENCH) worktree remove --force $$tmp; \
 	echo "Merged $$n run(s), $$(ls $(DATA)/results/*.csv 2>/dev/null | wc -l | tr -d ' ') CSVs (oldest to newest; later runs win filename collisions)."
 
 pipeline: results deploy pdf

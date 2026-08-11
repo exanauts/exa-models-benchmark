@@ -45,7 +45,9 @@ end
 function has_timing_schema(f)
     try
         hdr = split(first(eachline(f)), ",")
-        return all(c -> c in hdr, ("framework", "device", "n", "tgrad_ms", "tjac_ms"))
+        # batch_n marks the shared sync-bracketed timing protocol; files
+        # without it predate the protocol and are superseded.
+        return all(c -> c in hdr, ("framework", "device", "n", "tgrad_ms", "tjac_ms", "batch_n"))
     catch
         return false
     end
