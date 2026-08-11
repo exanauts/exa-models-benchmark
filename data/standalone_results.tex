@@ -1,0 +1,27 @@
+% Standalone preview of the generated benchmark tables and figures.
+% Built by `make results`; review this PDF, then `make deploy` copies the
+% build/ artifacts into the tracked results/ directory where the paper inputs them.
+\documentclass[11pt]{article}
+\usepackage[margin=2cm]{geometry}
+\usepackage{booktabs, pgfplots, graphicx, rotating}
+\pgfplotsset{compat=1.18}
+\usetikzlibrary{patterns}
+\usepackage{xcolor}
+\definecolor{j1}{HTML}{4063D8}
+\definecolor{j2}{HTML}{389826}
+\definecolor{j3}{HTML}{CB3C33}
+\definecolor{j4}{HTML}{9558B2}
+\newcommand{\benchtable}[2]{\IfFileExists{build/tables/#1.tex}{\section*{#2}\begin{center}\small\input{build/tables/#1.tex}\end{center}}{}}
+\begin{document}
+\benchtable{hardware}{Hardware platforms}
+\benchtable{sgm_summary}{SGM summary}
+\benchtable{gpu_summary_lv}{GPU summary (LV)}
+\benchtable{gpu_summary_cops}{GPU summary (COPS)}
+\benchtable{gpu_summary_opf_polar}{GPU summary (OPF polar)}
+\benchtable{gpu_summary_opf_rect}{GPU summary (OPF rect)}
+\section*{Figures}
+\makeatletter
+\@for\f:=LV_all_callbacks,COPS_all_callbacks,OPF_all_callbacks\do{%
+  \IfFileExists{build/figures/\f.tex}{\begin{center}\input{build/figures/\f.tex}\end{center}}{}}
+\makeatother
+\end{document}

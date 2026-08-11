@@ -1,0 +1,7 @@
+data/build/
+data/benchmark/
+data/standalone_results.pdf
+data/standalone_results.aux
+data/compare-venv/
+data/results/
+data/preview/

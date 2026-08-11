@@ -1,0 +1,6 @@
+# Run data lives on the results branch, fetched by `make fetch-results`, not on
+# main. A CSV committed here also gets merged by breakdown_out.jl alongside any
+# fetched bundle, which is how a run from one machine ends up blended with a run
+# from another.
+*.csv
+logs/

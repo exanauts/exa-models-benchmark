@@ -1,0 +1,61 @@
+# Stable paper labels, keyed by run UUID (any unique substring of the run id
+# on the results branch) or by bare hostname. A platform inherits the label of
+# any matching run, or of any host whose name matches exactly.
+# Pin every platform whose label appears in prose; unlabeled platforms get
+# the next free <class><N> plus a warning naming their run ids.
+#
+# Labels are assigned POSITIONALLY when unpinned -- in reading order over
+# whichever *_hw.toml files happen to be present -- so adding or losing a
+# single bundle renumbers every platform in every table, figure and sentence.
+# Every platform of this campaign is therefore pinned below. The class prefix
+# names the accelerator vendor: C# CPU-only, N# NVIDIA, A# AMD, M# Apple.
+#
+# The previous contents pinned "H1", "H2" and "H4" against four UUIDs from the
+# retired shin-compute-* campaign. None of those runs exist on the results
+# branch any more and the H<N> scheme is gone, so every pin was dead and every
+# label in the paper was auto-assigned.
+#
+# node4513 and node5000 are pinned by HOSTNAME, not by UUID: their hardware
+# files were written by compare/record_hw.jl (node4513_compare_hw.toml,
+# node5000_compare_hw.toml) and carry no run_id at all, so no UUID key can ever
+# reach them. They are the two Section 8.5 solve-breakdown machines; the runs
+# that used them are archived on the results branch as
+# 20260804T180002Z-node1625-3a6e5e71 (node4513, cpu-cpu breakdown) and
+# 20260804T180007Z-node1625-e0137245 (node5000, H200 breakdown).
+#
+# CAUTION: those two hardware files are covered by benchmark/.gitignore
+# (data/results/) and are NOT on the results branch. A fresh clone plus
+# `make fetch-results` therefore sees only nine platforms and hardware.tex
+# loses its C2 and N5 rows. The pins below keep the other nine labels fixed
+# when that happens, but C2 and N5 simply vanish. Archiving those two files
+# with their runs is the real fix.
+[labels]
+# --- CPU-only platforms ---
+"f7b6ba29" = "C1"   # node2808  — AMPL/JuMP reference host
+"node4513" = "C2"   # node4513  — Sec. 8.5 cpu-cpu solve-breakdown host
+"3233d7f2" = "C3"   # node4405  — ExaModels CPU, single thread
+"1c507957" = "C3"   # node4409  — same configuration, CPU-4T
+"2d6352dd" = "C3"   # node4410  — same configuration, CPU-8T
+"13b98201" = "C3"   # node4406  — same configuration, CPU-16T
+# The EPYC 9575F block, pinned by HOSTNAME for the same reason node4513 is:
+# its hardware files come from compare/record_hw.jl. C4 now appears in the
+# published Section 8.4 and 8.5 tables -- the CPU legs of both were re-measured
+# on this block and those runs supersede the 9474F ones -- so leaving it
+# auto-assigned would let it renumber the moment the file set changes.
+"node4110" = "C4"   # node4110  — Sec. 8.5 cpu-cpu breakdown
+"node4111" = "C4"   # node4111  — Sec. 8.4 LV comparison, CPU legs
+"node4115" = "C4"   # node4115  — Sec. 8.4 OPF comparison + Sec. 8.5 cpu-cpu
+
+# --- NVIDIA platforms ---
+"c7685761" = "N1"   # blackwell00 — B200
+"22f71b1f" = "N2"   # node2001    — A100-SXM4-80GB
+"06f37eb6" = "N3"   # node2501    — H100 80GB HBM3
+"905ffd27" = "N4"   # node3502    — L40S
+"node5000" = "N5"   # node5000    — H200, Sec. 8.5 GPU solve-breakdown host
+"9b00dc75" = "N6"   # node5003    — RTX PRO 6000 Blackwell Server Edition
+
+# --- AMD platform ---
+"46586875" = "A1"   # amdgpu00  — Radeon Graphics (MI-series)
+
+# --- Apple platform ---
+"ab8521fc" = "M1"   # shin-macbook-pro.local — M2 Pro (Float32)
