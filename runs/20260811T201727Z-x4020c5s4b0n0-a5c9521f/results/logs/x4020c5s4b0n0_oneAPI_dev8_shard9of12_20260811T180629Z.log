@@ -1,0 +1,13 @@
+[info | PowerModels]: Suppressing information and warning messages for the rest of this session.  Use the Memento package for more fine-grained control of logging.
+┌ Info: Running ExaModels benchmarks
+│   device = "oneAPI-Intel(R) Data Center GPU Max 1550"
+│   T = Float64
+│   seconds = 2.0
+└   suites = nothing
+[ Info: [LV ExaModels 1/3] broyden_tridiagonal/1000 (elapsed 1s)
+[ Info: [LV ExaModels 2/3] chained_hs46/1000 (elapsed 67s)
+[ Info: [LV ExaModels 3/3] chained_hs52/1000 (elapsed 116s)
+[ Info: [COPS ExaModels 1/3] channel/3200 (elapsed 168s)
+[ Info: [COPS ExaModels 2/3] minsurf/(50, 50) (elapsed 240s)
+[ Info: [COPS ExaModels 3/3] torsion/(50, 50) (elapsed 306s)
+[ Info: Results saved to results/x4020c5s4b0n0_oneAPI-Intel(R)_Data_Center_GPU_Max_1550_fp64_dev8_shard9of12.csv (6 rows)

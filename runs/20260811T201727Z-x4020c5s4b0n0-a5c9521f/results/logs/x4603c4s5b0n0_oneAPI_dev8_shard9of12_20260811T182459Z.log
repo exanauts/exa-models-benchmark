@@ -1,0 +1,1181 @@
+[info | PowerModels]: Suppressing information and warning messages for the rest of this session.  Use the Memento package for more fine-grained control of logging.
+┌ Info: Running ExaModels benchmarks
+│   device = "oneAPI-Intel(R) Data Center GPU Max 1550"
+│   T = Float64
+│   seconds = 2.0
+└   suites = nothing
+[ Info: [LV ExaModels 1/4] chained_powell/200000 (elapsed 1s)
+[ Info: [LV ExaModels 2/4] trigo_tridiagonal/200000 (elapsed 71s)
+[ Info: [LV ExaModels 3/4] chained_hs46/200000 (elapsed 124s)
+[ Info: [LV ExaModels 4/4] chained_hs50/200000 (elapsed 173s)
+[ Info: [COPS ExaModels 1/4] catmix/20000 (elapsed 227s)
+[ Info: [COPS ExaModels 2/4] elec/200 (elapsed 311s)
+[ Info: [COPS ExaModels 3/4] methanol/4000 (elapsed 363s)
+[ Info: [COPS ExaModels 4/4] robot/15000 (elapsed 520s)
+[ Info: [OPF ExaModels 1/11] polar/pglib_opf_case60_c.m (elapsed 617s)
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: [OPF ExaModels 2/11] polar/pglib_opf_case793_goc.m (elapsed 721s)
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: [OPF ExaModels 3/11] polar/pglib_opf_case2746wp_k.m (elapsed 794s)
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: [OPF ExaModels 4/11] polar/pglib_opf_case4619_goc.m (elapsed 869s)
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: [OPF ExaModels 5/11] polar/pglib_opf_case9591_goc.m (elapsed 943s)
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: [OPF ExaModels 6/11] rect/pglib_opf_case14_ieee.m (elapsed 1022s)
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: [OPF ExaModels 7/11] rect/pglib_opf_case197_snem.m (elapsed 1125s)
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: [OPF ExaModels 8/11] rect/pglib_opf_case2312_goc.m (elapsed 1201s)
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: [OPF ExaModels 9/11] rect/pglib_opf_case3022_goc.m (elapsed 1277s)
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: [OPF ExaModels 10/11] rect/pglib_opf_case6470_rte.m (elapsed 1355s)
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: [OPF ExaModels 11/11] rect/pglib_opf_case20758_epigrids.m (elapsed 1430s)
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Loading matpower file
+┌ Warning: `ExaCore()` is deprecated, and will be removed. Use `ExaCore(concrete = Val(true))` for the immutable ExaCore. The default behavior for `ExaCore()` will change to return the immutable ExaCore.
+└ @ ExaModels /lus/flare/projects/Julia/mschanen/julia_depot/packages/ExaModels/g3VdC/src/deprecated.jl:30
+[ Info: Results saved to results/x4603c4s5b0n0_oneAPI-Intel(R)_Data_Center_GPU_Max_1550_fp64_dev8_shard9of12.csv (19 rows)
