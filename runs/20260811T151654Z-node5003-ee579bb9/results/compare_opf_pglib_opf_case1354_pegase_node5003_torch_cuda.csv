@@ -1,0 +1,2 @@
+problem,case,framework,device,n,threads,tobj_ms,tcons_ms,tgrad_ms,tjac_ms,thess_ms,variant,cpu_wall_ratio,colors_jac,colors_hess,nnz_jac,nnz_hess,unique_jac,unique_hess,computed_jac,computed_hess,tbuild_s,batch_n,batch_spread,harness_floor_ns,hostname,commit
+opf,pglib_opf_case1354_pegase,torch,cuda,11192,1,0.010245910612866282,0.06285491168964653,0.020520200114697216,0.08541977019049228,0.35291467115380315,"obj=plain/graph,cons=plain/compile,grad=plain/graph,jac=vmap/compile,hess=vmap/compile",0.99,8,28,62959,90572,62959,19126,201040,313376,,93,0.027294,44,node5003,1c5ba8e
