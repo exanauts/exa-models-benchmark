@@ -1,0 +1,2 @@
+problem,case,framework,device,n,threads,tobj_ms,tcons_ms,tgrad_ms,tjac_ms,thess_ms,variant,cpu_wall_ratio,colors_jac,colors_hess,nnz_jac,nnz_hess,unique_jac,unique_hess,computed_jac,computed_hess,tbuild_s,batch_n,batch_spread,harness_floor_ns,hostname,commit
+opf,pglib_opf_case9241_pegase,casadi-mx,cpu,85568,1,0.0016199919627979398,0.6775759975425899,0.019650004105642438,9.545130989863537,6.34369500039611,"obj=mx/jit+buffer,cons=mx/buffer,grad=mx/jit+buffer,jac=mx/buffer,hess=mx/buffer",1.0,,,502843,148747,502843,148747,502843,148747,2.135,,,50,node4410,1c5ba8e
